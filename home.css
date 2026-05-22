@@ -13,7 +13,7 @@
 
 /* ── CTA Strip ─────────────────────────── */
 .cta-strip {
-  background: var(--olive);
+  background: #a7b4b9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +22,7 @@
 }
 
 .cta-strip p {
-  color: #e8e2d6;
+  color: var(--text);
   font-family: var(--font-sans);
   font-size: 0.8rem;
   letter-spacing: 0.12em;
@@ -32,8 +32,9 @@
 .btn-cta {
   display: inline-block;
   padding: 0.6rem 1.8rem;
-  border: 1px solid #e8e2d6;
-  color: #e8e2d6;
+  background: var(--cream);
+  border: 1px solid var(--cream);
+  color: var(--text);
   font-family: var(--font-sans);
   font-size: 0.7rem;
   letter-spacing: 0.16em;
@@ -44,7 +45,8 @@
 
 .btn-cta:hover {
   background: #e8e2d6;
-  color: var(--olive);
+  border-color: #e8e2d6;
+  color: var(--text);
 }
 
 /* ── Intro ─────────────────────────────── */
