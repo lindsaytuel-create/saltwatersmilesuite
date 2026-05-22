@@ -17,6 +17,7 @@ const SERVICES = {
     price: 'from $50.00',
     images: [
       'images/ButterflyGem.png',
+      'images/Butterfly2.jpeg',
     ],
     description: 'Butterfly shaped gem in select colors for a special look! A delicate, elegant touch that turns heads and expresses your unique personality.',
     colorNote: 'Colors: Pink, Purple, Diamond',
@@ -51,7 +52,7 @@ const SERVICES = {
     name: 'Gem Party',
     price: '$300.00',
     images: [
-      'images/GemParty.png',
+      'images/Gem Party2.jpeg',
     ],
     description: `<p>Make your next birthday, girls' night, bridal event, or special occasion sparkle with a tooth gem party.</p>
 <p>This package includes <strong>10 single crystal gems to split among your group however you'd like</strong>. Choose one gem per person, multiple gems for a few guests, or any combination that works for your party.</p>
