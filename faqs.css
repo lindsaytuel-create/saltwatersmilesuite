@@ -60,7 +60,7 @@ main {
 .faq-question span:first-child {
   font-family: var(--font-serif);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text);
   line-height: 1.4;
 }
