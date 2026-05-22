@@ -31,7 +31,7 @@ const SERVICES = {
       'images/SpecialtyGem.png',
     ],
     description: 'Stand out with one-of-a-kind specialty gems including hearts, stars, flowers, and more. These premium gems are applied with the same safe, non-invasive technique and are designed to make your smile truly unforgettable.',
-    colorNote: 'Styles: Heart, Star, Flower, Moon, and more — ask about current availability.',
+    colorNote: 'Various styles available. Browse our selection at your appointment, or contact us in advance to inquire about a specific style.',
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-e7b806a3-1ede-434f-9128-cee7b913d04f',
   },
