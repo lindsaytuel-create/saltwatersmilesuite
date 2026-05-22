@@ -119,7 +119,7 @@ const SERVICES = {
     name: 'Stain Protection Serum',
     price: '$60.00',
     images: [
-      'images/stainserum.png',
+      'images/StainSerum.png',
     ],
     description: `<p>Up to 3 Months of Stain Protection – Helps protect whitening results from everyday staining.</p>
 <p>• Biomimetic Enamel Remineralization – Powered by nano-hydroxyapatite to help repair and strengthen enamel.</p>
