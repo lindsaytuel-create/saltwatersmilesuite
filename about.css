@@ -17,6 +17,20 @@
   z-index: 0;
 }
 
+/* Olive band behind the content */
+.about-hero::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 55%;
+  background: var(--olive);
+  opacity: 0.88;
+  z-index: 0;
+}
+
 /* ── Content row ───────────────────────── */
 .about-content {
   position: relative;
@@ -35,7 +49,7 @@
 .about-photo-wrap {
   flex: 0 0 auto;
   width: 360px;
-  box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.28);
 }
 
 .about-photo {
