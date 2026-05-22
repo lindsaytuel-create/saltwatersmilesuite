@@ -13,9 +13,7 @@
 .about-bg {
   position: absolute;
   inset: 0;
-  background-image: url('images/home.png');
-  background-size: cover;
-  background-position: center 20%;
+  background: var(--bg);
   z-index: 0;
 }
 
