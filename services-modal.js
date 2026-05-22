@@ -28,11 +28,11 @@ const SERVICES = {
     name: 'Specialty Tooth Gems',
     price: '$60.00 & up',
     images: [
-      'images/GemParty2.jpeg',
+      'images/MicroGems.jpeg',
       'images/SpecialtyGem.png',
       'images/Butterfly2.jpeg',
       'images/Zodiac2.jpeg',
-      'images/MicroGems.jpeg',
+      'images/GemParty2.jpeg',
     ],
     description: 'Stand out with one-of-a-kind specialty gems including hearts, stars, flowers, and more. These premium gems are applied with the same safe, non-invasive technique and are designed to make your smile truly unforgettable.',
     colorNote: 'Various styles available. Browse our selection at your appointment, or contact us in advance to inquire about a specific style.',
