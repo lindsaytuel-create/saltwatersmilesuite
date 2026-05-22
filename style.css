@@ -24,13 +24,13 @@ body {
 
 /* ── Nav ───────────────────────────────── */
 nav {
-  background: #a7b4b9;
+  background: var(--bg);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   padding: 1.1rem 2rem;
-  border-bottom: 1px solid #93a4aa;
+  border-bottom: 1px solid var(--divider);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -91,8 +91,8 @@ nav {
    FOOTER
 ══════════════════════════════════════════ */
 footer {
-  background: #3a3f2d;
-  border-top: 1px solid #4a5038;
+  background: #a7b4b9;
+  border-top: 1px solid #93a4aa;
   padding: 2.5rem 2rem 2rem;
   text-align: center;
 }
@@ -109,13 +109,13 @@ footer {
 .footer-copy {
   font-family: var(--font-serif);
   font-size: 0.9rem;
-  color: #c8bfae;
+  color: var(--text);
 }
 
 .footer-address {
   font-family: var(--font-serif);
   font-size: 0.9rem;
-  color: #a09888;
+  color: var(--text-muted);
 }
 
 .footer-hours-heading {
@@ -123,13 +123,13 @@ footer {
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.1em;
-  color: #c8bfae;
+  color: var(--text);
   margin-top: 0.4rem;
 }
 
 .footer-hours {
   font-family: var(--font-serif);
   font-size: 0.88rem;
-  color: #a09888;
+  color: var(--text-muted);
   line-height: 1.9;
 }
