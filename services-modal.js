@@ -36,18 +36,7 @@ const SERVICES = {
     bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-e7b806a3-1ede-434f-9128-cee7b913d04f',
   },
 
-  'zodiac-gem': {
-    name: 'Zodiac Tooth Gem',
-    price: '$100.00',
-    images: [
-      'images/Zodiac2.jpeg',
-    ],
-    description: '22k Gold Zodiac Charms — wear your sign with pride. These stunning gold-plated zodiac charms are applied safely to your tooth and make for a meaningful, personalized statement.',
-    cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-840e197a-a7e8-4c1f-9c91-82a9f21fc996',
-  },
-
-  'gem-removal': {
+'gem-removal': {
     name: 'Tooth Gem Removal',
     price: '$20.00',
     images: [
