@@ -27,7 +27,7 @@ const SERVICES = {
 
   'specialty-gems': {
     name: 'Specialty Tooth Gems',
-    price: '$60.00',
+    price: '$60.00 & up',
     images: [
       'images/SpecialtyGem.png',
       'images/Butterfly2.jpeg',
