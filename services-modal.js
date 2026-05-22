@@ -40,7 +40,7 @@ const SERVICES = {
     name: 'Zodiac Tooth Gem',
     price: '$100.00',
     images: [
-      'images/zodiacgem.png',
+      'images/Zodiac2.jpeg',
     ],
     description: '22k Gold Zodiac Charms — wear your sign with pride. These stunning gold-plated zodiac charms are applied safely to your tooth and make for a meaningful, personalized statement.',
     cta: 'Book Now',
