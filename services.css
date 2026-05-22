@@ -116,19 +116,19 @@ main {
 .booking-card {
   background: var(--cream);
   border: 1px solid #c4aa7a;
-  width: 100%;
-  max-width: 420px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
 .booking-brand {
+  flex: 1;
   padding: 2.5rem 2rem 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 0;
 }
 
