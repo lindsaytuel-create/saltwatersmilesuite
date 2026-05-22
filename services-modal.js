@@ -30,7 +30,6 @@ const SERVICES = {
     images: [
       'images/MicroGems.jpeg',
       'images/SpecialtyGem.png',
-      'images/Butterfly2.jpeg',
       'images/Zodiac2.jpeg',
       'images/GemParty2.jpeg',
     ],
