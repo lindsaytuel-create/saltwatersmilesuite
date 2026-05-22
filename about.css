@@ -18,8 +18,8 @@
 .about-hero::before {
   content: '';
   position: absolute;
-  left: 6%;
-  right: 6%;
+  left: 10%;
+  right: 10%;
   top: 50%;
   transform: translateY(-50%);
   height: 58%;
