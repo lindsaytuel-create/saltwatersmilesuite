@@ -52,7 +52,7 @@ const SERVICES = {
     name: 'Gem Party',
     price: '$300.00',
     images: [
-      'images/Gem Party2.jpeg',
+      'images/GemParty2.jpeg',
     ],
     description: `<p>Make your next birthday, girls' night, bridal event, or special occasion sparkle with a tooth gem party.</p>
 <p>This package includes <strong>10 single crystal gems to split among your group however you'd like</strong>. Choose one gem per person, multiple gems for a few guests, or any combination that works for your party.</p>
