@@ -89,8 +89,8 @@ main {
   display: block;
   width: 100%;
   padding: 0.85rem;
-  background: #5a6147;
-  color: #fff;
+  background: #a7b4b9;
+  color: var(--text);
   text-align: center;
   text-decoration: none;
   font-family: var(--font-sans);
@@ -102,7 +102,7 @@ main {
   flex-shrink: 0;
 }
 
-.btn:hover { background: #5a6147; }
+.btn:hover { background: #93a4aa; }
 
 
 /* ── Custom Booking ────────────────────── */
