@@ -10,14 +10,14 @@ main {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.8rem;
+  gap: 2.4rem;
   align-items: stretch;
 }
 
 /* ── Card ──────────────────────────────── */
 .card {
   background: var(--cream);
-  border: 1px solid #c4aa7a;
+  border: 2px solid #c4aa7a;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -115,7 +115,7 @@ main {
 
 .booking-card {
   background: var(--cream);
-  border: 1px solid #c4aa7a;
+  border: 2px solid #c4aa7a;
   display: flex;
   flex-direction: column;
   overflow: hidden;
