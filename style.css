@@ -24,13 +24,13 @@ body {
 
 /* ── Nav ───────────────────────────────── */
 nav {
-  background: var(--bg);
+  background: #a7b4b9;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   padding: 1.1rem 2rem;
-  border-bottom: 1px solid var(--divider);
+  border-bottom: 1px solid #93a4aa;
   position: sticky;
   top: 0;
   z-index: 100;
