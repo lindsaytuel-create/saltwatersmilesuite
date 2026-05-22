@@ -459,14 +459,17 @@ main {
     flex-direction: column;
     max-height: 95vh;
     width: 96vw;
+    overflow-y: auto;
   }
   .modal-gallery {
-    flex: 0 0 45vw;
-    max-height: 42vw;
+    flex: none;
+    height: 52vw;
+    max-height: 260px;
   }
   .modal-thumbs { flex-direction: row; flex: none; overflow-x: auto; padding: 8px; }
   .thumb { width: 48px; height: 48px; flex-shrink: 0; }
-  .modal-main-wrap { flex: 1; }
-  .modal-info { padding: 1.5rem 1.25rem; }
-  .modal-name { font-size: 1.5rem; }
+  .modal-main-wrap { flex: 1; height: 100%; }
+  .modal-info { padding: 1.25rem 1rem 1.5rem; overflow-y: visible; }
+  .modal-name { font-size: 1.4rem; padding-right: 2.5rem; }
+  .modal-btn { margin-top: 1.5rem; }
 }

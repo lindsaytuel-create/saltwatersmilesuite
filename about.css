@@ -91,5 +91,5 @@
   .about-photo-wrap { width: 100%; max-width: 480px; }
   .about-photo { height: 360px; }
   .about-sparkle { display: none; }
-  .about-text-box { flex: none; width: 100%; max-width: 480px; padding: 2rem 1.5rem; }
+  .about-text-box { flex: none; width: 100%; max-width: 480px; padding: 2rem 1.5rem; margin-left: 0; }
 }
