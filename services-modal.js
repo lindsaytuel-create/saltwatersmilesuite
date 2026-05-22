@@ -59,7 +59,7 @@ const SERVICES = {
     description: `<p>Make your next birthday, girls' night, bridal event, or special occasion sparkle with a tooth gem party.</p>
 <p>This package includes <strong>10 single crystal gems to split among your group however you'd like</strong>. Choose one gem per person, multiple gems for a few guests, or any combination that works for your party.</p>
 <p>Available <strong>in-office</strong>, <strong>at your home</strong>, or <strong>at your event/party space</strong>.</p>
-<p><em>For larger parties, mobile events, or specialty gems such as different shapes, colors, zodiac signs, or butterflies, please contact us for custom pricing.</em></p>
+<p><em>For larger parties, mobile events, or specialty gems, please contact us for custom pricing.</em></p>
 <p><strong>Must be booked at least 2 weeks in advance. Participants must be 14 years or older. Guests under 18 require parent/guardian consent.</strong></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-85e6239d-69c7-457c-93a3-6ea61461dada',
