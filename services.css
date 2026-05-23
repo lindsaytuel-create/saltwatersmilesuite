@@ -16,7 +16,7 @@ main {
 
 /* ── Card ──────────────────────────────── */
 .card {
-  background: var(--cream);
+  background: #edf0e6;
   border: 1px solid rgba(196, 170, 122, 0.3);
   box-shadow: none;
   display: flex;
@@ -34,7 +34,7 @@ main {
 
 /* logo placeholder */
 .card-img-logo {
-  background: var(--cream);
+  background: #edf0e6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +115,7 @@ main {
 }
 
 .booking-card {
-  background: var(--cream);
+  background: #edf0e6;
   border: 1px solid rgba(196, 170, 122, 0.3);
   box-shadow: none;
   display: flex;
@@ -248,7 +248,7 @@ main {
 .modal-panel {
   position: relative;
   z-index: 1;
-  background: var(--cream);
+  background: #edf0e6;
   display: flex;
   width: 90vw;
   max-width: 940px;
