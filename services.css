@@ -16,7 +16,7 @@ main {
 
 /* ── Card ──────────────────────────────── */
 .card {
-  background: #edf0e6;
+  background: #e4ead8;
   border: 1px solid rgba(196, 170, 122, 0.3);
   box-shadow: none;
   display: flex;
@@ -115,7 +115,7 @@ main {
 }
 
 .booking-card {
-  background: #edf0e6;
+  background: #e4ead8;
   border: 1px solid rgba(196, 170, 122, 0.3);
   box-shadow: none;
   display: flex;
@@ -248,7 +248,7 @@ main {
 .modal-panel {
   position: relative;
   z-index: 1;
-  background: #edf0e6;
+  background: var(--cream);
   display: flex;
   width: 90vw;
   max-width: 940px;
