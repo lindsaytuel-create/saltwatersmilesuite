@@ -1,3 +1,7 @@
+body {
+  background: #d9cfc0;
+}
+
 .location-main {
   display: flex;
   align-items: stretch;

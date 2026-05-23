@@ -3,7 +3,7 @@
 
 /* ── Tokens ────────────────────────────── */
 :root {
-  --bg:         #e5dfd3;
+  --bg:         #d9cfc0;
   --cream:      #f3ede0;
   --olive:      #5a6147;
   --olive-dk:   #48503a;
@@ -16,7 +16,7 @@
 }
 
 body {
-  background: var(--bg);
+  background: #d9cfc0;
   color: var(--text);
   font-family: var(--font-sans);
   min-height: 100vh;
@@ -64,6 +64,7 @@ nav {
 
 .nav-links a.active {
   border-bottom: 1.5px solid var(--text);
+  font-weight: 300;
 }
 
 .nav-icons {

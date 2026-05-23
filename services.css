@@ -3,22 +3,83 @@
 main {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 3rem 2rem 5rem;
+  padding: 0 2rem 5rem;
+}
+
+/* ── Page header ───────────────────────── */
+.page-header {
+  text-align: center;
+  padding: 3.5rem 0 3rem;
+}
+
+.page-header h1 {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.page-header-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--border);
+  margin: 0 auto 1rem;
+}
+
+.page-header p {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* ── Category dividers ─────────────────── */
+.category-divider {
+  grid-column: 1 / -1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem 0 1rem;
+  margin-top: 0.5rem;
+}
+
+.category-divider::before,
+.category-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--divider);
+}
+
+.category-divider span {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 /* ── Grid ──────────────────────────────── */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.4rem;
+  gap: 2rem;
   align-items: stretch;
 }
 
 /* ── Card ──────────────────────────────── */
 .card {
-  background: #e4ead8;
-  border: 1px solid rgba(196, 170, 122, 0.3);
-  box-shadow: none;
+  background: var(--cream);
+  border: 1px solid rgba(196, 170, 122, 0.25);
+  border-top: 2px solid rgba(196, 170, 122, 0.55);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -51,9 +112,9 @@ main {
   font-family: var(--font-serif);
   font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.3;
   color: var(--text);
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.7rem;
 }
 
 .divider {
@@ -78,31 +139,33 @@ main {
 
 .price {
   font-family: var(--font-sans);
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   font-weight: 300;
-  color: #7a7060;
-  letter-spacing: 0.02em;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
 }
 
 /* ── Buttons ───────────────────────────── */
 .btn {
   display: block;
   width: 100%;
-  padding: 0.85rem;
-  background: #5a6147;
+  padding: 0.9rem;
+  background: var(--olive);
   color: #fff;
   text-align: center;
   text-decoration: none;
   font-family: var(--font-sans);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 400;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
   flex-shrink: 0;
+  transition: background 0.2s;
 }
 
-.btn:hover { background: #5a6147; }
+.btn:hover { background: var(--olive-dk); }
 
 
 /* ── Custom Booking ────────────────────── */
@@ -115,9 +178,10 @@ main {
 }
 
 .booking-card {
-  background: #e4ead8;
-  border: 1px solid rgba(196, 170, 122, 0.3);
-  box-shadow: none;
+  background: #3a3f2d;
+  border: 1px solid rgba(196, 170, 122, 0.2);
+  border-top: 2px solid rgba(196, 170, 122, 0.5);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -139,7 +203,7 @@ main {
   font-style: italic;
   font-size: 2.2rem;
   font-weight: 300;
-  color: #6b6456;
+  color: #d4c9b4;
   line-height: 1;
   display: block;
   margin-bottom: 0.2rem;
@@ -147,10 +211,10 @@ main {
 
 .brand-smile {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 400;
   letter-spacing: 0.3em;
-  color: #6b6456;
+  color: #a09888;
   display: block;
   margin-bottom: 0.8rem;
 }
@@ -158,25 +222,25 @@ main {
 .brand-rule {
   width: 60px;
   height: 1px;
-  background: #b8ae99;
+  background: rgba(196, 170, 122, 0.5);
   margin-bottom: 0.8rem;
 }
 
 .brand-suite {
   font-family: var(--font-sans);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 400;
   letter-spacing: 0.3em;
-  color: #6b6456;
+  color: #a09888;
   display: block;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 
 .booking-title {
   font-family: var(--font-serif);
   font-size: 1.6rem;
   font-weight: 400;
-  color: var(--text);
+  color: #f3ede0;
   line-height: 1.2;
 }
 
@@ -214,13 +278,20 @@ main {
 
 @media (max-width: 580px) {
   .grid { grid-template-columns: 1fr; }
-  main { padding: 2rem 1.25rem 4rem; }
+  main { padding: 0 1.25rem 4rem; }
+  .page-header { padding: 2.5rem 0 2rem; }
+  .page-header h1 { font-size: 2.2rem; }
 }
 
 /* ── Card hover cursor ─────────────────── */
 .card, .card-no-btn { cursor: pointer; }
 .card { transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
-.card:hover { transform: translateY(-3px); border-color: rgba(196, 170, 122, 0.9); box-shadow: 0 0 20px rgba(196, 170, 122, 1), 0 0 50px rgba(196, 170, 122, 0.7), 0 0 100px rgba(196, 170, 122, 0.45), 0 0 160px rgba(196, 170, 122, 0.2); }
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(196, 170, 122, 0.8);
+  border-top-color: rgba(196, 170, 122, 0.8);
+  box-shadow: 0 0 20px rgba(196, 170, 122, 0.6), 0 0 50px rgba(196, 170, 122, 0.4), 0 0 80px rgba(196, 170, 122, 0.2);
+}
 
 /* ══════════════════════════════════════════
    QUICK VIEW MODAL
