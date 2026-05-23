@@ -17,8 +17,8 @@ main {
 /* ── Card ──────────────────────────────── */
 .card {
   background: var(--cream);
-  border: 1px solid rgba(196, 170, 122, 0.9);
-  box-shadow: 0 0 20px rgba(196, 170, 122, 1), 0 0 50px rgba(196, 170, 122, 0.7), 0 0 100px rgba(196, 170, 122, 0.45), 0 0 160px rgba(196, 170, 122, 0.2);
+  border: 1px solid rgba(196, 170, 122, 0.3);
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -116,8 +116,8 @@ main {
 
 .booking-card {
   background: var(--cream);
-  border: 1px solid rgba(196, 170, 122, 0.9);
-  box-shadow: 0 0 20px rgba(196, 170, 122, 1), 0 0 50px rgba(196, 170, 122, 0.7), 0 0 100px rgba(196, 170, 122, 0.45), 0 0 160px rgba(196, 170, 122, 0.2);
+  border: 1px solid rgba(196, 170, 122, 0.3);
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -219,8 +219,8 @@ main {
 
 /* ── Card hover cursor ─────────────────── */
 .card, .card-no-btn { cursor: pointer; }
-.card { transition: transform 0.2s, box-shadow 0.2s; }
-.card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.13); }
+.card { transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+.card:hover { transform: translateY(-3px); border-color: rgba(196, 170, 122, 0.9); box-shadow: 0 0 20px rgba(196, 170, 122, 1), 0 0 50px rgba(196, 170, 122, 0.7), 0 0 100px rgba(196, 170, 122, 0.45), 0 0 160px rgba(196, 170, 122, 0.2); }
 
 /* ══════════════════════════════════════════
    QUICK VIEW MODAL
