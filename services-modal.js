@@ -8,7 +8,7 @@ const SERVICES = {
     description: 'Add a little sparkle to your smile with luxury tooth gems applied in a safe, non-invasive cosmetic service. Create a custom look that\'s subtle, bold, classy, or playful! Tooth gems are painless, enamel-safe when properly applied, and can last for 6+ months with good care. Whether you want a tiny shimmer or a statement smile, we\'re here to make your vision shine.',
     colorNote: 'Various colors available.',
     cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-dc6679e8-4b4c-44dd-998f-b23eeb977fe1',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=92970419',
   },
 
   'butterfly-gem': {
@@ -21,7 +21,7 @@ const SERVICES = {
     description: 'Butterfly shaped gem in select colors for a special look! A delicate, elegant touch that turns heads and expresses your unique personality.',
     colorNote: 'Colors: Pink, Purple, Diamond',
     cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-b635285f-7cc7-4df3-b02a-8fbb96c78962',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=92984919',
   },
 
   'specialty-gems': {
@@ -36,10 +36,10 @@ const SERVICES = {
     description: 'Stand out with one-of-a-kind specialty gems including hearts, stars, flowers, and more. These premium gems are applied with the same safe, non-invasive technique and are designed to make your smile truly unforgettable.',
     colorNote: 'Various styles available. Browse our selection at your appointment, or contact us in advance to inquire about a specific style.',
     cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-e7b806a3-1ede-434f-9128-cee7b913d04f',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93273347',
   },
 
-'gem-removal': {
+  'gem-removal': {
     name: 'Tooth Gem Removal',
     price: '$20.00',
     images: [
@@ -47,7 +47,7 @@ const SERVICES = {
     ],
     description: 'Safely remove existing tooth gems. This service includes gentle removal of the gem and adhesive, followed by polishing to leave the tooth smooth, clean, and natural-looking. Perfect for changing styles, replacing old gems, or returning to a gem-free smile. Quick, painless, and non-invasive.',
     cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-7c75335a-24c7-4604-a805-4c1a60614353',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93260550',
   },
 
   'gem-party': {
@@ -62,7 +62,7 @@ const SERVICES = {
 <p><em>For larger parties, mobile events, or specialty gems, please contact us for custom pricing.</em></p>
 <p><strong>Must be booked at least 2 weeks in advance. Participants must be 14 years or older. Guests under 18 require parent/guardian consent.</strong></p>`,
     cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-85e6239d-69c7-457c-93a3-6ea61461dada',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93263036',
   },
 
   'signature-whitening': {
@@ -76,7 +76,7 @@ const SERVICES = {
 <p><em>Clients are recommended to have a dental cleaning at least 3–6 months prior to whitening.</em></p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-9d6b3820-6291-4c11-abca-bfaa1ded882f',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93260957',
   },
 
   'coastal-whitening': {
@@ -88,7 +88,7 @@ const SERVICES = {
     description: `<p>A quick, gentle whitening refresh using professional hydrogen peroxide gel and LED light to brighten your smile in just 30 minutes. Perfect for touch-ups, maintenance, first-time whitening, or a last-minute glow before an event. Designed to noticeably brighten your smile in one quick visit.</p>
 <p>Includes: Shade consultation, Lip oil, 20–30 minute whitening treatment, and post-treatment comfort care.</p>`,
     cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-47992ad0-eac3-4f59-b43f-5dc3ad5f8960',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93261896',
   },
 
   'wedding-package': {
@@ -102,7 +102,7 @@ const SERVICES = {
 <p>Includes 2 professional whitening treatments (1.5 hrs)<br><em>2 Free enamel and stain protector</em><br><em>2 Free on-the-go whitening pens</em></p>
 <p><em>Please contact for larger parties and mobile inquiries. We are available to come to you!</em></p>`,
     cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-c945d0e1-a106-46d6-82bd-d438bc69335b',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93262904',
   },
 
   'glo-pen': {
@@ -112,9 +112,7 @@ const SERVICES = {
       'images/GloPen.png',
     ],
     description: `<p>Glo whitening pen is the most convenient, mess-free way to whiten without sensitivity. Clinically proven to whiten after just one application–formulated with 12% hydrogen peroxide and infused with plant-based antimicrobials and antioxidants.</p>`,
-    note: 'Select as an add-on to any service, or swing by the suite to pick one up.',
-    cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-a3a2e8be-b616-4fce-87c3-65dedcb156e8',
+    note: 'Choose as an add-on to a service when booking.',
   },
 
   'serum': {
@@ -127,9 +125,7 @@ const SERVICES = {
 <p>• Biomimetic Enamel Remineralization – Powered by nano-hydroxyapatite to help repair and strengthen enamel.</p>
 <p>• Post-Treatment Enamel Recovery – Supports enamel restoration and strengthening following whitening or aligner therapy.</p>
 <p>• Restoration-Safe, Fluoride-Free Formula – Vegan and cruelty-free; safe for veneers, crowns, and bridges.</p>`,
-    note: 'Select as an add-on to any service, or swing by the suite to pick one up.',
-    cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.glossgenius.com/book?service_token=1000f-60c563de-e4c2-4423-b95d-0b44e8056295',
+    note: 'Choose as an add-on to a service when booking.',
   },
 
   'gift-card': {
@@ -191,8 +187,10 @@ function openModal(serviceId) {
   modalCta.textContent = s.cta || 'Book Now';
   if (s.bookingUrl) {
     modalCta.href = s.bookingUrl;
+    modalCta.style.display = '';
   } else {
     modalCta.removeAttribute('href');
+    modalCta.style.display = 'none';
   }
 
   // thumbnails
