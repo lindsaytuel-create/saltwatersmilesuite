@@ -3,20 +3,26 @@
 main {
   max-width: 860px;
   margin: 0 auto;
-  padding: 0 2rem 5rem;
+  padding: 2.5rem 2rem 5rem;
 }
 
-/* ── Header ─────────────────────────────── */
-.intake-header {
+/* ── Hero banner ────────────────────────── */
+.intake-hero {
+  background: var(--olive);
+  padding: 4rem 2rem 3.5rem;
   text-align: center;
-  padding: 3.5rem 0 2.5rem;
 }
 
-.intake-header h1 {
+.intake-hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.intake-hero h1 {
   font-family: var(--font-serif);
   font-size: 2.8rem;
   font-weight: 300;
-  color: var(--text);
+  color: #f3ede0;
   letter-spacing: 0.04em;
   margin-bottom: 1rem;
 }
@@ -24,16 +30,16 @@ main {
 .intake-divider {
   width: 56px;
   height: 1px;
-  background: var(--border);
+  background: rgba(243, 237, 224, 0.45);
   margin: 0 auto 1rem;
 }
 
-.intake-header p {
+.intake-hero p {
   font-family: var(--font-sans);
   font-size: 0.78rem;
   font-weight: 300;
   letter-spacing: 0.18em;
-  color: var(--text-muted);
+  color: rgba(243, 237, 224, 0.7);
   text-transform: uppercase;
 }
 
@@ -74,8 +80,8 @@ main {
 
 /* ── Responsive ─────────────────────────── */
 @media (max-width: 580px) {
-  main { padding: 0 1.25rem 4rem; }
-  .intake-header { padding: 2.5rem 0 2rem; }
-  .intake-header h1 { font-size: 2.2rem; }
+  main { padding: 2rem 1.25rem 4rem; }
+  .intake-hero { padding: 2.5rem 1.25rem 2.5rem; }
+  .intake-hero h1 { font-size: 2.2rem; }
   .form-wrap iframe { min-height: 900px; }
 }
