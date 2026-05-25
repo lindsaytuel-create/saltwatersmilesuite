@@ -1,0 +1,81 @@
+/* ── New Client Intake page ─────────────── */
+
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+}
+
+/* ── Header ─────────────────────────────── */
+.intake-header {
+  text-align: center;
+  padding: 3.5rem 0 2.5rem;
+}
+
+.intake-header h1 {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: var(--text);
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+
+.intake-divider {
+  width: 56px;
+  height: 1px;
+  background: var(--border);
+  margin: 0 auto 1rem;
+}
+
+.intake-header p {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* ── Returning client bar ───────────────── */
+.returning-bar {
+  text-align: center;
+  padding: 0 0 2rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--text-muted);
+}
+
+.returning-link {
+  color: var(--olive);
+  text-decoration: none;
+  border-bottom: 1px solid var(--olive);
+  padding-bottom: 1px;
+  transition: opacity 0.2s;
+}
+
+.returning-link:hover { opacity: 0.7; }
+
+/* ── Form container ─────────────────────── */
+.form-wrap {
+  background: var(--cream);
+  border: 1px solid rgba(196, 170, 122, 0.22);
+  border-top: 2px solid rgba(196, 170, 122, 0.55);
+  overflow: hidden;
+}
+
+.form-wrap iframe {
+  display: block;
+  width: 100%;
+  min-height: 800px;
+  border: none;
+}
+
+/* ── Responsive ─────────────────────────── */
+@media (max-width: 580px) {
+  main { padding: 0 1.25rem 4rem; }
+  .intake-header { padding: 2.5rem 0 2rem; }
+  .intake-header h1 { font-size: 2.2rem; }
+  .form-wrap iframe { min-height: 900px; }
+}

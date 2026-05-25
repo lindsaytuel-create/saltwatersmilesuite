@@ -3,27 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saltwater Smile Suite</title>
+    <title>New Client Intake — Saltwater Smile Suite</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="images/saltwater-smile-suite-favicon.ico" />
     <link rel="apple-touch-icon" href="images/saltwater-smile-suite-favicon-180 (1).png" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="new-client.css" />
   </head>
   <body>
 
     <!-- NAV -->
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="new-client.html">New Clients</a></li>
+        <li><a href="new-client.html" class="active">New Clients</a></li>
         <li><a href="faqs.html">FAQs</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="location.html">Location</a></li>
@@ -42,30 +39,31 @@
       </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero">
-      <img src="images/home.png" alt="Saltwater Smile Suite — Tooth Gems, Whitening, Confident Smiles" />
-    </section>
+    <main>
 
-    <!-- CTA STRIP -->
-    <section class="cta-strip">
-      <p>Ready to glow?</p>
-      <a href="services.html" class="btn-cta">View Services &amp; Book</a>
-    </section>
-
-    <!-- INTRO -->
-    <section class="intro">
-      <div class="intro-inner">
-        <h2>Welcome to Saltwater Smile Suite</h2>
-        <div class="divider-center"></div>
-        <p>
-          A coastal-inspired smile studio offering professional tooth gems,
-          in-office whitening, and luxury smile experiences — all in a calm,
-          boutique setting designed just for you.
-        </p>
-        <a href="about.html" class="link-underline">Learn about us</a>
+      <div class="intake-header">
+        <h1>New Client Intake</h1>
+        <div class="intake-divider"></div>
+        <p>Please complete this form before your first appointment</p>
       </div>
-    </section>
+
+      <div class="returning-bar">
+        Already a client? <a href="https://saltwatersmilesuite.glossgenius.com" id="returningLink" class="returning-link" target="_blank" rel="noopener">Book directly &rarr;</a>
+      </div>
+
+      <div class="form-wrap">
+        <iframe
+          id="jotformFrame"
+          title="New Client Intake Form"
+          src="https://form.jotform.com/261428738638065"
+          allowtransparency="true"
+          allowfullscreen="true"
+          scrolling="yes"
+          frameborder="0"
+        ></iframe>
+      </div>
+
+    </main>
 
     <footer>
       <div class="footer-inner">
@@ -80,6 +78,32 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // Read the service-specific booking URL passed from the services page
+      var params = new URLSearchParams(window.location.search);
+      var redirectUrl = params.get('redirect');
+
+      // Point the returning-client link to the same service if available
+      if (redirectUrl) {
+        document.getElementById('returningLink').href = redirectUrl;
+      }
+
+      // After JotForm submits, redirect to the service booking page
+      window.addEventListener('message', function(e) {
+        if (!e.origin.includes('jotform.com')) return;
+        var data = e.data;
+        if (typeof data === 'string') {
+          try { data = JSON.parse(data); } catch (ex) {}
+        }
+        var submitted =
+          (typeof data === 'object' && data.action === 'submission-completed') ||
+          data === 'submittedForm';
+        if (submitted) {
+          window.location.href = redirectUrl || 'https://saltwatersmilesuite.glossgenius.com';
+        }
+      });
+    </script>
 
     <script src="script.js"></script>
   </body>
