@@ -190,7 +190,7 @@ function openModal(serviceId) {
   modalNote.textContent  = s.note || '';
   modalCta.textContent = s.cta || 'Book Now';
   if (s.bookingUrl) {
-    modalCta.href = 'new-client.html?redirect=' + encodeURIComponent(s.bookingUrl);
+    modalCta.href = s.bookingUrl;
   } else {
     modalCta.removeAttribute('href');
   }
