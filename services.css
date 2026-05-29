@@ -281,6 +281,7 @@ main {
 /* ── Responsive ────────────────────────── */
 @media (max-width: 900px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
+  .header-star { display: none; }
 }
 
 @media (max-width: 580px) {
@@ -288,7 +289,6 @@ main {
   main { padding: 0 1.25rem 4rem; }
   .page-header { padding: 2.5rem 0 2rem; }
   .page-header h1 { font-size: 2.2rem; }
-  .header-star { display: none; }
 }
 
 /* ── Card hover cursor ─────────────────── */
