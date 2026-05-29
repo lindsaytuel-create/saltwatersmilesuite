@@ -90,7 +90,7 @@ nav {
 .nav-sub {
   display: none;
   position: absolute;
-  top: calc(100% + 0.75rem);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: var(--bg);
@@ -100,6 +100,15 @@ nav {
   z-index: 200;
   padding: 0.4rem 0;
   box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+}
+
+.nav-sub::before {
+  content: '';
+  position: absolute;
+  top: -0.6rem;
+  left: 0;
+  right: 0;
+  height: 0.6rem;
 }
 
 .nav-sub li a {
