@@ -61,19 +61,19 @@ main {
 
 .oh-card h2 {
   font-family: var(--font-serif);
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: var(--text);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   line-height: 1.2;
 }
 
 .oh-card p {
   font-family: var(--font-serif);
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 400;
   color: var(--text-muted);
-  line-height: 1.85;
+  line-height: 1.8;
 }
 
 /* ── Responsive ─────────────────────────── */
@@ -82,5 +82,5 @@ main {
   .oh-header { padding: 2.5rem 1.25rem 2.5rem; }
   .oh-header h1 { font-size: 2.1rem; }
   .oh-card { padding: 1.75rem 1.5rem; }
-  .oh-card h2 { font-size: 1.5rem; }
+  .oh-card h2 { font-size: 1.2rem; }
 }
