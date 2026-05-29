@@ -7,6 +7,13 @@ main {
 }
 
 /* ── Page header ───────────────────────── */
+.header-star {
+  color: var(--border);
+  font-size: 1.6rem;
+  vertical-align: middle;
+  opacity: 0.85;
+}
+
 .page-header {
   text-align: center;
   padding: 3.5rem 0 3rem;
