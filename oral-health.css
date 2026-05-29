@@ -1,0 +1,86 @@
+/* ── Oral Health & Wellness page ────────── */
+
+main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+}
+
+/* ── Hero banner ────────────────────────── */
+.oh-header {
+  background: var(--olive);
+  padding: 4rem 2rem 3.5rem;
+  text-align: center;
+}
+
+.oh-header-inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.oh-header h1 {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #f3ede0;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+
+.oh-divider {
+  width: 56px;
+  height: 1px;
+  background: rgba(243, 237, 224, 0.45);
+  margin: 0 auto 1.2rem;
+}
+
+.oh-badge {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(243, 237, 224, 0.65);
+}
+
+/* ── Content area ───────────────────────── */
+.oh-body {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* ── Service cards ──────────────────────── */
+.oh-card {
+  background: var(--cream);
+  border: 1px solid rgba(196, 170, 122, 0.22);
+  border-top: 2px solid rgba(196, 170, 122, 0.55);
+  padding: 2.5rem 2.5rem 2.25rem;
+}
+
+.oh-card h2 {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.oh-card p {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1.85;
+}
+
+/* ── Responsive ─────────────────────────── */
+@media (max-width: 580px) {
+  main { padding: 0 1.25rem 4rem; }
+  .oh-header { padding: 2.5rem 1.25rem 2.5rem; }
+  .oh-header h1 { font-size: 2.1rem; }
+  .oh-card { padding: 1.75rem 1.5rem; }
+  .oh-card h2 { font-size: 1.5rem; }
+}

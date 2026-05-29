@@ -82,6 +82,42 @@ nav {
 
 .nav-icons a:hover { color: var(--olive); }
 
+/* ── Nav dropdown ──────────────────────── */
+.nav-has-dropdown {
+  position: relative;
+}
+
+.nav-sub {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg);
+  border: 1px solid var(--divider);
+  list-style: none;
+  min-width: 210px;
+  z-index: 200;
+  padding: 0.4rem 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+}
+
+.nav-sub li a {
+  display: block;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: none !important;
+  transition: color 0.15s;
+}
+
+.nav-sub li a:hover { color: var(--olive); }
+
+.nav-has-dropdown:hover .nav-sub { display: block; }
+
 /* ── Responsive nav ────────────────────── */
 @media (max-width: 768px) {
   nav { flex-wrap: wrap; gap: 0.5rem; padding: 0.9rem 1rem; }
