@@ -81,7 +81,7 @@ const SERVICES = {
 
   'coastal-whitening': {
     name: 'Coastal Express Glow Whitening',
-    price: '$175.00',
+    price: '$150.00',
     images: [
       'images/ExpressGlow2.png',
     ],
@@ -117,7 +117,7 @@ const SERVICES = {
 
   'serum': {
     name: 'Stain Protection Serum',
-    price: '$60.00',
+    price: '$80.00',
     images: [
       'images/StainSerum.png',
     ],
