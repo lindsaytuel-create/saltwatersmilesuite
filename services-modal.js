@@ -43,7 +43,7 @@ const SERVICES = {
     name: 'Tooth Gem Removal',
     price: '$20.00',
     images: [
-      'images/GemRemoval.png',
+      'images/toothgemremoval.png',
     ],
     description: 'Safely remove existing tooth gems. This service includes gentle removal of the gem and adhesive, followed by polishing to leave the tooth smooth, clean, and natural-looking. Perfect for changing styles, replacing old gems, or returning to a gem-free smile. Quick, painless, and non-invasive.',
     cta: 'Book Now',
