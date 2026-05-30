@@ -105,6 +105,19 @@ const SERVICES = {
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93262904',
   },
 
+  'desensitizing': {
+    name: 'Desensitizing Treatment',
+    price: '$25.00',
+    images: [
+      'images/desensitizing.png',
+    ],
+    description: `<p>While mild tooth sensitivity after whitening is uncommon, it can happen and is usually temporary. This treatment is a great option if you are prone to sensitivity or want extra comfort after your whitening appointment.</p>
+<p>Schedule a desensitizing treatment as an add-on to any whitening service or as a stand-alone maintenance treatment for occasional tooth sensitivity. A professional desensitizing gel is applied after the whitening process is complete to help calm the teeth, support comfort, and reduce post-whitening sensitivity.</p>
+<p><em>Please note: this treatment is intended for temporary whitening-related sensitivity or general sensitivity maintenance. It does not treat sensitivity caused by gum recession, cavities, cracked teeth, exposed roots, infection, or other dental conditions. If sensitivity is persistent, severe, or localized to one tooth, we recommend seeing a dentist for an evaluation.</em></p>`,
+    cta: 'Book Now',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93868964',
+  },
+
   'glo-pen': {
     name: 'GLO Whitening Pen',
     price: '$40.00',
