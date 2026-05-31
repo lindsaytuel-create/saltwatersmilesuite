@@ -33,6 +33,7 @@ const SERVICES = {
       'images/GemParty2.jpeg',
     ],
     description: 'Stand out with one-of-a-kind specialty gems including hearts, stars, flowers, and more. These premium gems are applied with the same safe, non-invasive technique and are designed to make your smile truly unforgettable.',
+    note: 'Gold and silver charms, shapes, clusters, and custom placements. Final pricing depends on design and gem selection.',
     colorNote: 'Various styles available. Browse our selection at your appointment, or contact us in advance to inquire about a specific style.',
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93273347',
