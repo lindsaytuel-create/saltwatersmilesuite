@@ -39,7 +39,7 @@ const SERVICES = {
     description: `<p>Stand out with one-of-a-kind specialty gems including hearts, stars, flowers, and more. These premium gems are applied with the same safe, non-invasive technique and are designed to make your smile truly unforgettable.</p>
 <p>Final pricing depends on design and gem selection.</p>
 <p>★ There must be 2 weeks between teeth whitening sessions and any tooth gem services, to allow for proper adhesion of the gems.</p>`,
-    colorNote: 'Various styles available. Browse our selection at your appointment, or contact us in advance to inquire about a specific style.',
+
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93273347',
   },
