@@ -33,7 +33,10 @@ const SERVICES = {
     price: 'from $50.00',
     duration: '30 minutes',
     images: [
-      'images/MicroGems.jpeg',
+      'images/fairydust1.png',
+      'images/fairydust2.png',
+      'images/fairydust3.png',
+      'images/fairydust4.png',
     ],
     description: `<p>A delicate, high-sparkle tooth gem design using Swarovski quality micro-mini crystals for a soft shimmering effect. Choose a half-tooth accent for subtle sparkle or a full-tooth fairy dust design for a bolder glow. Final pricing may vary based on tooth size, placement, and design complexity.</p>
 <p>Half tooth: $50 | Full tooth: $100</p>
