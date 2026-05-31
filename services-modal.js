@@ -35,7 +35,6 @@ const SERVICES = {
     duration: '30 minutes',
     images: [
       'images/fairydust1.png',
-      'images/fairydust2.png',
       'images/fairydust3.png',
       'images/fairydust4.png',
     ],
