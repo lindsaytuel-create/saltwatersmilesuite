@@ -6,7 +6,8 @@ const SERVICES = {
     images: [
       'images/SingleGem.png',
     ],
-    description: 'Add a little sparkle to your smile with luxury tooth gems applied in a safe, non-invasive cosmetic service. Create a custom look that\'s subtle, bold, classy, or playful! Tooth gems are painless, enamel-safe when properly applied, and can last for 6+ months with good care. Whether you want a tiny shimmer or a statement smile, we\'re here to make your vision shine.',
+    description: `<p>Add a little sparkle to your smile with luxury tooth gems applied in a safe, non-invasive cosmetic service. Create a custom look that's subtle, bold, classy, or playful! Tooth gems are painless, enamel-safe when properly applied, and can last for 6+ months with good care. Whether you want a tiny shimmer or a statement smile, we're here to make your vision shine.</p>
+<p>★ There must be 2 weeks between teeth whitening sessions and any tooth gem services, to allow for proper adhesion of the gems.</p>`,
     colorNote: 'Various colors available. Add on multiple tooth gems upon checkout. If you have a design in mind, please message us for an inquiry.',
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=92970419',
@@ -20,7 +21,8 @@ const SERVICES = {
       'images/ButterflyGem.png',
       'images/Butterfly2.jpeg',
     ],
-    description: 'Butterfly shaped gem in various colors for a special look! A delicate, elegant touch that turns heads and expresses your unique personality.',
+    description: `<p>Butterfly shaped gem in various colors for a special look! A delicate, elegant touch that turns heads and expresses your unique personality.</p>
+<p>★ There must be 2 weeks between teeth whitening sessions and any tooth gem services, to allow for proper adhesion of the gems.</p>`,
     colorNote: 'Various colors available',
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=92984919',
@@ -34,8 +36,9 @@ const SERVICES = {
       'images/SpecialtyGem.png',
       'images/GemParty2.jpeg',
     ],
-    description: 'Stand out with one-of-a-kind specialty gems including hearts, stars, flowers, and more. These premium gems are applied with the same safe, non-invasive technique and are designed to make your smile truly unforgettable.',
-    note: 'Gold and silver charms, shapes, clusters, and custom placements. Final pricing depends on design and gem selection.',
+    description: `<p>Stand out with one-of-a-kind specialty gems including hearts, stars, flowers, and more. These premium gems are applied with the same safe, non-invasive technique and are designed to make your smile truly unforgettable.</p>
+<p>Final pricing depends on design and gem selection.</p>
+<p>★ There must be 2 weeks between teeth whitening sessions and any tooth gem services, to allow for proper adhesion of the gems.</p>`,
     colorNote: 'Various styles available. Browse our selection at your appointment, or contact us in advance to inquire about a specific style.',
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93273347',
@@ -48,7 +51,8 @@ const SERVICES = {
     images: [
       'images/toothgemremoval.png',
     ],
-    description: 'Safely remove existing tooth gems. This service includes gentle removal of the gem and adhesive, followed by polishing to leave the tooth smooth, clean, and natural-looking. Perfect for changing styles, replacing old gems, or returning to a gem-free smile. Quick, painless, and non-invasive.',
+    description: `<p>Safely remove existing tooth gems. This service includes gentle removal of the gem and adhesive, followed by polishing to leave the tooth smooth, clean, and natural-looking. Perfect for changing styles, replacing old gems, or returning to a gem-free smile. Quick, painless, and non-invasive.</p>
+<p>★ There must be 2 weeks between teeth whitening sessions and any tooth gem services, to allow for proper adhesion of the gems.</p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93260550',
   },
