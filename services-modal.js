@@ -148,6 +148,7 @@ const SERVICES = {
     name: 'Serenity Session Package',
     price: '$25.00',
     images: [
+      'images/serenity.png',
       'images/serenitysession.png',
     ],
     description: 'Upgrade your experience with bluetooth headphones, a cozy blanket, aromatherapy, a cooling jade eye mask, and 5 minutes of red light LED therapy to help soothe tissues, support circulation within the gums, and improve overall treatment comfort.',
