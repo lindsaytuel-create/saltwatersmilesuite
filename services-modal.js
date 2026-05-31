@@ -145,7 +145,7 @@ const SERVICES = {
   },
 
   'serenity-session': {
-    name: 'Serenity Session Upgrade',
+    name: 'Serenity Session Package',
     price: '$25.00',
     images: [
       'images/serenitysession.png',
@@ -182,11 +182,11 @@ const SERVICES = {
     price: '$5.00',
     duration: '5 minutes',
     images: [
-      'images/serenitysession.png',
+      'images/Redlight1.png',
     ],
     description: `<p>Our Red LED light is used to help soothe tissues, support circulation within the gums, and improve overall treatment comfort.</p>
 <p>Low-level light therapy (or photobiomodulation) stimulates cellular energy production, supporting tissue oxygenation and regulating inflammation. When applied to the mouth post-whitening, it counteracts the oxidative stress caused by bleaching agents.</p>`,
-    note: 'Add on to any booking at checkout.',
+    note: 'Add on to any treatment during check out.',
   },
 
   'gift-card': {
