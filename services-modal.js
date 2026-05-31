@@ -31,6 +31,7 @@ const SERVICES = {
   'swarovski-gems': {
     name: 'Swarovski Fairy Dust Gems',
     price: 'from $50.00',
+    duration: '45 minutes',
     duration: '30 minutes',
     images: [
       'images/fairydust1.png',
@@ -91,7 +92,7 @@ const SERVICES = {
   'signature-whitening': {
     name: 'Signature Saltwater Glow Whitening',
     price: '$350.00',
-    duration: '45 minutes',
+    duration: '60 minutes',
     images: [
       'images/Signature2.jpeg',
     ],
