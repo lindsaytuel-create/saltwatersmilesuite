@@ -49,6 +49,7 @@ const SERVICES = {
     price: 'from $60.00',
     images: [
       'images/MicroGems.jpeg',
+      'images/heartgem.png',
       'images/gemparty2.png',
     ],
     description: `<p>Stand out with one-of-a-kind specialty gems including hearts, stars, flowers, and more. These premium gems are applied with the same safe, non-invasive technique and are designed to make your smile truly unforgettable.</p>
