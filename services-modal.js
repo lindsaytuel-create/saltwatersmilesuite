@@ -177,6 +177,18 @@ const SERVICES = {
     note: 'Choose as an add-on to a service when booking.',
   },
 
+  'red-light': {
+    name: 'Red Light Add-on',
+    price: '$5.00',
+    duration: '5 minutes',
+    images: [
+      'images/serenitysession.png',
+    ],
+    description: `<p>Our Red LED light is used to help soothe tissues, support circulation within the gums, and improve overall treatment comfort.</p>
+<p>Low-level light therapy (or photobiomodulation) stimulates cellular energy production, supporting tissue oxygenation and regulating inflammation. When applied to the mouth post-whitening, it counteracts the oxidative stress caused by bleaching agents.</p>`,
+    note: 'Add on to any booking at checkout.',
+  },
+
   'gift-card': {
     name: 'Gift Card',
     price: 'from $25.00',
