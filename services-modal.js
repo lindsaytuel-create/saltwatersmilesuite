@@ -42,6 +42,7 @@ const SERVICES = {
 <p>Half tooth: $50 | Full tooth: $100</p>
 <p>★ For best results, tooth gem appointments must be scheduled at least 2 weeks after any whitening treatment to allow for proper adhesion.</p>`,
     cta: 'Book Now',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93892840',
   },
 
   'specialty-gems': {
