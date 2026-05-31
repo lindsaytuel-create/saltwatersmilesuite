@@ -30,9 +30,8 @@ const SERVICES = {
 
   'swarovski-gems': {
     name: 'Swarovski Fairy Dust Gems',
-    price: 'from $50.00',
+    price: 'from $60.00',
     duration: '45 minutes',
-    duration: '30 minutes',
     images: [
       'images/fairydust1.png',
       'images/fairydust3.png',
