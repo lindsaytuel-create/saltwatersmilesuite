@@ -6,7 +6,7 @@ const SERVICES = {
       'images/SingleGem.png',
     ],
     description: 'Add a little sparkle to your smile with luxury tooth gems applied in a safe, non-invasive cosmetic service. Create a custom look that\'s subtle, bold, classy, or playful! Tooth gems are painless, enamel-safe when properly applied, and can last for 6+ months with good care. Whether you want a tiny shimmer or a statement smile, we\'re here to make your vision shine.',
-    colorNote: 'Various colors available.',
+    colorNote: 'Various colors available. Add on multiple tooth gems upon checkout. If you have a design in mind, please message us for an inquiry.',
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=92970419',
   },
