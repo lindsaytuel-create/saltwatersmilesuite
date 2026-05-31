@@ -117,6 +117,14 @@ const SERVICES = {
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93868964',
   },
 
+  'serenity-session': {
+    name: 'Serenity Session Upgrade',
+    price: '$25.00',
+    images: [],
+    description: 'Add noise cancelling Bluetooth headphones, a cozy blanket, aromatherapy, and a cooling jade eye mask to your service.',
+    note: 'Add-on during booking.',
+  },
+
   'glo-pen': {
     name: 'GLO Whitening Pen',
     price: '$40.00',
