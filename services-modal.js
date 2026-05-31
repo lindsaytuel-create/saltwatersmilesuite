@@ -67,6 +67,7 @@ const SERVICES = {
   'signature-whitening': {
     name: 'Signature Saltwater Glow Whitening',
     price: '$350.00',
+    duration: '60 minutes',
     images: [
       'images/Signature2.jpeg',
     ],
@@ -81,6 +82,7 @@ const SERVICES = {
   'coastal-whitening': {
     name: 'Coastal Express Glow Whitening',
     price: '$150.00',
+    duration: '30 minutes',
     images: [
       'images/ExpressGlow2.png',
     ],
@@ -170,6 +172,7 @@ const modalImg    = document.getElementById('modalImg');
 const modalThumbs = document.getElementById('modalThumbs');
 const modalName   = document.getElementById('modalName');
 const modalPrice  = document.getElementById('modalPrice');
+const modalDuration = document.getElementById('modalDuration');
 const modalDesc   = document.getElementById('modalDesc');
 const modalColorNote = document.getElementById('modalColorNote');
 const modalNote   = document.getElementById('modalNote');
@@ -203,6 +206,7 @@ function openModal(serviceId) {
   // populate fields
   modalName.textContent  = s.name;
   modalPrice.textContent = s.price;
+  modalDuration.innerHTML = s.duration ? `<em>${s.duration}</em>` : '';
   modalDesc.innerHTML    = s.description || '';
   modalColorNote.textContent = s.colorNote || '';
   modalNote.textContent  = s.note || '';
