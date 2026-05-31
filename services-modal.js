@@ -2,6 +2,7 @@ const SERVICES = {
   'single-gem': {
     name: 'Single Tooth Gem',
     price: '$40.00',
+    duration: '30 minutes',
     images: [
       'images/SingleGem.png',
     ],
@@ -14,6 +15,7 @@ const SERVICES = {
   'butterfly-gem': {
     name: 'Butterfly Tooth Gem',
     price: 'from $50.00',
+    duration: '30 minutes',
     images: [
       'images/ButterflyGem.png',
       'images/Butterfly2.jpeg',
@@ -42,6 +44,7 @@ const SERVICES = {
   'gem-removal': {
     name: 'Tooth Gem Removal',
     price: '$20.00',
+    duration: '30 minutes',
     images: [
       'images/toothgemremoval.png',
     ],
@@ -121,7 +124,7 @@ const SERVICES = {
   },
 
   'serenity-session': {
-    name: 'Serenity Session upgrade',
+    name: 'Serenity Session Upgrade',
     price: '$25.00',
     images: [
       'images/serenitysession.png',
