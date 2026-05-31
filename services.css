@@ -290,11 +290,25 @@ main {
   flex: 0 0 calc((100% - 4rem) / 3);
 }
 
+/* ── 4-card row ────────────────────────── */
+.grid-4-row {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.grid-4-row > * {
+  flex: 0 0 calc((100% - 6rem) / 4);
+}
+
 /* ── Responsive ────────────────────────── */
 @media (max-width: 900px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
   .header-star { display: none; }
   .grid-center-row > * { flex: 0 0 calc((100% - 2rem) / 2); }
+  .grid-4-row { flex-wrap: wrap; }
+  .grid-4-row > * { flex: 0 0 calc((100% - 2rem) / 2); }
 }
 
 @media (max-width: 580px) {
