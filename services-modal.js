@@ -120,7 +120,9 @@ const SERVICES = {
   'serenity-session': {
     name: 'Serenity Session upgrade',
     price: '$25.00',
-    images: [],
+    images: [
+      'images/serenitysession.png',
+    ],
     description: 'Add noise cancelling bluetooth headphones, a cozy blanket, aromatherapy, and a cooling jade eye mask to your service.',
     note: 'Add-on during booking.',
   },
