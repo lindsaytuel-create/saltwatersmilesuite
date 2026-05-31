@@ -151,7 +151,7 @@ const SERVICES = {
       'images/serenitysession.png',
     ],
     description: 'Upgrade your experience with bluetooth headphones, a cozy blanket, aromatherapy, a cooling jade eye mask, and 5 minutes of red light LED therapy to help soothe tissues, support circulation within the gums, and improve overall treatment comfort.',
-    note: 'Add-on during booking.',
+    note: 'Add-on to any whitening treatment at check-out.',
   },
 
   'glo-pen': {
