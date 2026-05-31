@@ -111,7 +111,7 @@ const SERVICES = {
       'images/ExpressGlow2.png',
     ],
     description: `<p>A quick, gentle whitening refresh designed to brighten your smile in just 30 minutes. This express treatment uses professional carbamide peroxide gel with LED light to lift surface stains and support a brighter smile with lower sensitivity. Results of up to 5 shades brighter are possible, and because carbamide peroxide gradually breaks down into hydrogen peroxide, your whitening will continue to develop over the following few days after your appointment. Perfect for touch-ups, maintenance or first-time whitening.</p>
-<p>Includes: Shade consultation, Lip oil, 20–30 minute whitening treatment, and post-treatment comfort care.</p>
+<p>Includes: Shade consultation, gingival barrier placement, Lip oil, 20–30 minute whitening treatment, and post-treatment comfort care.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93261896',
