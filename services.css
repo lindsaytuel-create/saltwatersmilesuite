@@ -251,6 +251,15 @@ main {
   line-height: 1.2;
 }
 
+.booking-price {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: #a09888;
+  margin-top: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
 .btn-booking {
   max-width: none;
 }
