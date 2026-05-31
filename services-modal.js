@@ -14,7 +14,7 @@ const SERVICES = {
 
   'butterfly-gem': {
     name: 'Butterfly Tooth Gem',
-    price: 'from $50.00',
+    price: '$60.00',
     duration: '30 minutes',
     images: [
       'images/ButterflyGem.png',
