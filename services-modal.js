@@ -79,7 +79,8 @@ const SERVICES = {
       'images/Signature2.jpeg',
     ],
     description: `<p>Your whitening appointment begins with a nourishing lip oil application for added comfort, followed by a personalized shade consultation to discuss your goals, expectations, and the safest path to achieving your best result under the guidance of dental professionals. The proprietary whitening gel is activated by heat technology that significantly accelerates performance, and the shorter sessions prevent dehydration of the teeth so there is little to no sensitivity and the whitening effect lasts longer than other harsher whitening treatments.</p>
-<p>Included with your appointment is a professional-grade, one-week enamel treatment delivering up to three months of stain protection and enamel support. Powered by nano-hydroxyapatite, this serum can help remineralize and strengthen enamel while preventing everyday stains.</p>
+<p>Included with your appointment is a professional-grade, one-week enamel treatment delivering up to three months of stain protection and enamel support.</p>
+<p>Perfect for first time whitening clients, sensitivity-prone clients, and those wanting quick brightening results.</p>
 <p><em>Clients are recommended to have a dental cleaning at least 3–6 months prior to whitening.</em></p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
