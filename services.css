@@ -282,6 +282,7 @@ main {
 .grid-center-row {
   grid-column: 1 / -1;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
@@ -316,6 +317,7 @@ main {
   main { padding: 0 1.25rem 4rem; }
   .page-header { padding: 2.5rem 0 2rem; }
   .page-header h1 { font-size: 2.2rem; }
+  .grid-center-row > * { flex: 0 0 100%; }
 }
 
 /* ── Card hover cursor ─────────────────── */
