@@ -7,7 +7,7 @@ const SERVICES = {
       'images/SingleGem.png',
     ],
     description: `<p>Add a little sparkle to your smile with luxury tooth gems applied in a safe, non-invasive cosmetic service. Create a custom look that's subtle, bold, classy, or playful! Tooth gems are painless, enamel-safe when properly applied, and can last for 6+ months with good care. Whether you want a tiny shimmer or a statement smile, we're here to make your vision shine.</p>
-<p>★ There must be 2 weeks between teeth whitening sessions and any tooth gem services, to allow for proper adhesion of the gems.</p>`,
+<p>★ For best results, tooth gem appointments must be scheduled at least 2 weeks after any whitening treatment to allow for proper adhesion.</p>`,
     colorNote: 'Various colors available. Add on multiple tooth gems upon checkout. If you have a design in mind, please message us for an inquiry.',
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=92970419',
@@ -22,7 +22,7 @@ const SERVICES = {
       'images/Butterfly2.jpeg',
     ],
     description: `<p>Butterfly shaped gem in various colors for a special look! A delicate, elegant touch that turns heads and expresses your unique personality.</p>
-<p>★ There must be 2 weeks between teeth whitening sessions and any tooth gem services, to allow for proper adhesion of the gems.</p>`,
+<p>★ For best results, tooth gem appointments must be scheduled at least 2 weeks after any whitening treatment to allow for proper adhesion.</p>`,
     colorNote: 'Various colors available',
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=92984919',
@@ -38,7 +38,7 @@ const SERVICES = {
     ],
     description: `<p>Stand out with one-of-a-kind specialty gems including hearts, stars, flowers, and more. These premium gems are applied with the same safe, non-invasive technique and are designed to make your smile truly unforgettable.</p>
 <p>Final pricing depends on design and gem selection.</p>
-<p>★ There must be 2 weeks between teeth whitening sessions and any tooth gem services, to allow for proper adhesion of the gems.</p>`,
+<p>★ For best results, tooth gem appointments must be scheduled at least 2 weeks after any whitening treatment to allow for proper adhesion.</p>`,
 
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93273347',
@@ -52,7 +52,7 @@ const SERVICES = {
       'images/toothgemremoval.png',
     ],
     description: `<p>Safely remove existing tooth gems. This service includes gentle removal of the gem and adhesive, followed by polishing to leave the tooth smooth, clean, and natural-looking. Perfect for changing styles, replacing old gems, or returning to a gem-free smile. Quick, painless, and non-invasive.</p>
-<p>★ There must be 2 weeks between teeth whitening sessions and any tooth gem services, to allow for proper adhesion of the gems.</p>`,
+<p>★ For best results, tooth gem appointments must be scheduled at least 2 weeks after any whitening treatment to allow for proper adhesion.</p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93260550',
   },
