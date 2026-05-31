@@ -58,7 +58,7 @@ const SERVICES = {
 
   'gem-party': {
     name: 'Gem Party',
-    price: '$300.00',
+    price: 'starting at $300',
     images: [
       'images/GemParty2.jpeg',
     ],
