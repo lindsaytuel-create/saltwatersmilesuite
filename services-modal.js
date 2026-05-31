@@ -30,7 +30,6 @@ const SERVICES = {
     images: [
       'images/MicroGems.jpeg',
       'images/SpecialtyGem.png',
-      'images/Zodiac2.jpeg',
       'images/GemParty2.jpeg',
     ],
     description: 'Stand out with one-of-a-kind specialty gems including hearts, stars, flowers, and more. These premium gems are applied with the same safe, non-invasive technique and are designed to make your smile truly unforgettable.',
