@@ -178,7 +178,7 @@ const SERVICES = {
   },
 
   'red-light': {
-    name: 'Red Light Add-on',
+    name: 'Calming Red-Light Add-on',
     price: '$5.00',
     duration: '5 minutes',
     images: [
