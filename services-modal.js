@@ -180,8 +180,8 @@ const SERVICES = {
 
   'red-light': {
     name: 'Calming Red-Light Add-on',
-    price: '$5.00',
-    duration: '5 minutes',
+    price: '$10.00',
+    duration: '10 minutes',
     images: [
       'images/Redlight1.png',
     ],
