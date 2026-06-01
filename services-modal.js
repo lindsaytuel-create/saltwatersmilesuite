@@ -168,7 +168,7 @@ const SERVICES = {
 
   'serum': {
     name: 'Stain Protection Serum',
-    price: '$80.00',
+    price: '$75.00',
     images: [
       'images/StainSerum.png',
     ],
