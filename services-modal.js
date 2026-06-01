@@ -95,7 +95,7 @@ const SERVICES = {
       'images/Signature2.jpeg',
     ],
     description: `<p>Your whitening appointment includes a shade consultation, a nourishing lip oil application, gingival barrier placement, and 3–4 whitening sessions of 8 minutes each, depending on your smile goals and sensitivity level. Your appointment finishes with a stain protection application to help support and protect your results, plus clear post-care instructions so you know exactly how to maintain your brighter smile.</p>
-<p>Included with your appointment is a professional-grade enamel treatment delivering up to three months of stain protection and enamel support.</p>
+<p>Included with your appointment is a free take home enamel treatment, delivering up to three months of stain protection and enamel support.</p>
 <p>Perfect for first time whitening clients, sensitivity-prone clients, and those wanting quick brightening results.</p>
 <p><em>Clients are recommended to have a dental cleaning at least 3–6 months prior to whitening.</em></p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
