@@ -95,7 +95,7 @@ const SERVICES = {
       'images/Signature2.jpeg',
     ],
     description: `<p>Your whitening appointment includes a shade consultation, a nourishing lip oil application, gingival barrier placement, and 3–4 whitening sessions of 8 minutes each, depending on your smile goals and sensitivity level. Your appointment finishes with a stain protection application to help support and protect your results, plus clear post-care instructions so you know exactly how to maintain your brighter smile.</p>
-<p>Included with your appointment is a free take home enamel treatment, delivering up to three months of stain protection and enamel support.</p>
+<p>Add-on a stain protection serum to help protect your smile.</p>
 <p>Perfect for first time whitening clients, sensitivity-prone clients, and those wanting quick brightening results.</p>
 <p><em>Clients are recommended to have a dental cleaning at least 3–6 months prior to whitening.</em></p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
@@ -125,7 +125,8 @@ const SERVICES = {
     ],
     description: `<p>Perfect for weddings, vacations, photos, birthdays, or special events.</p>
 <p>2 people - $600</p>
-<p>Includes 2 professional whitening treatments (1.5 hrs)<br><em>2 Free enamel and stain protector</em><br><em>2 Free on-the-go whitening pens</em></p>
+<p>Includes 2 professional whitening treatments (1.5 hrs)<br><em>2 Free on-the-go whitening pens</em></p>
+<p>Add-on a stain protection serum to help protect your smile.</p>
 <p><em>Please contact for larger parties and mobile inquiries. We are available to come to you!</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93262904',
