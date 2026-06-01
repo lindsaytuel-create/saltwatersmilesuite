@@ -94,7 +94,7 @@ const SERVICES = {
     images: [
       'images/Signature2.jpeg',
     ],
-    description: `<p>Your whitening appointment includes a shade consultation, a nourishing lip oil application, gingival barrier placement, and 3–4 whitening sessions of 8 minutes each, depending on your smile goals and sensitivity level. Your appointment finishes with a stain protection application to help support and protect your results, plus clear post-care instructions so you know exactly how to maintain your brighter smile.</p>
+    description: `<p>Your whitening appointment includes a shade consultation, a nourishing lip oil application, gingival barrier placement, and 3–4 whitening sessions of 8 minutes each, depending on your smile goals and sensitivity level. Your appointment finishes with clear post-care instructions so you know exactly how to maintain your brighter smile.</p>
 <p>Add-on a stain protection serum to help protect your smile.</p>
 <p>Perfect for first time whitening clients, sensitivity-prone clients, and those wanting quick brightening results.</p>
 <p><em>Clients are recommended to have a dental cleaning at least 3–6 months prior to whitening.</em></p>
