@@ -13,21 +13,6 @@ const SERVICES = {
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=92970419',
   },
 
-  'butterfly-gem': {
-    name: 'Butterfly Tooth Gem',
-    price: '$60.00',
-    duration: '30 minutes',
-    images: [
-      'images/ButterflyGem.png',
-      'images/Butterfly2.jpeg',
-    ],
-    description: `<p>Butterfly shaped gem in various colors for a special look! A delicate, elegant touch that turns heads and expresses your unique personality.</p>
-<p>★ For best results, tooth gem appointments must be scheduled at least 2 weeks after any whitening treatment to allow for proper adhesion.</p>`,
-    colorNote: 'Various colors available',
-    cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=92984919',
-  },
-
   'swarovski-gems': {
     name: 'Swarovski Fairy Dust Gems',
     price: 'from $60.00',
@@ -49,6 +34,8 @@ const SERVICES = {
     price: 'from $60.00',
     images: [
       'images/specialtyoblong.png',
+      'images/ButterflyGem.png',
+      'images/Butterfly2.jpeg',
       'images/heartgem.png',
       'images/gemparty2.png',
     ],
