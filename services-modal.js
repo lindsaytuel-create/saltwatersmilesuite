@@ -90,14 +90,14 @@ const SERVICES = {
   'signature-whitening': {
     name: 'Signature Saltwater Glow Whitening',
     price: '$350.00',
-    duration: '60 minutes',
+    duration: '75 minutes',
     images: [
       'images/Signature2.jpeg',
     ],
-    description: `<p>Your whitening appointment includes a shade consultation, a nourishing lip oil application, gingival barrier placement, and 3–4 whitening sessions of 8 minutes each, depending on your smile goals and sensitivity level. Your appointment finishes with clear post-care instructions so you know exactly how to maintain your brighter smile.</p>
+    description: `<p>Our most comprehensive whitening experience for clients seeking maximum brightening in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier and multiple whitening sessions.</p>
+<p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
+<p>Includes lip oil application, shade consultation, protective gum barrier placement, multiple whitening sessions, and post-care instructions.</p>
 <p>Add-on a stain protection serum to help protect your smile.</p>
-<p>Perfect for first time whitening clients, sensitivity-prone clients, and those wanting quick brightening results.</p>
-<p><em>Clients are recommended to have a dental cleaning at least 3–6 months prior to whitening.</em></p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93260957',
@@ -106,12 +106,13 @@ const SERVICES = {
   'coastal-whitening': {
     name: 'Coastal Express Glow Whitening',
     price: '$150.00',
-    duration: '30 minutes',
+    duration: '45 minutes',
     images: [
       'images/ExpressGlow2.png',
     ],
-    description: `<p>A quick, gentle whitening refresh designed to brighten your smile in just 30 minutes. This express treatment uses professional carbamide peroxide gel with LED light to lift surface stains and support a brighter smile with lower sensitivity. Results of up to 5 shades brighter are possible, and because carbamide peroxide gradually breaks down into hydrogen peroxide, your whitening will continue to develop over the following few days after your appointment. Perfect for touch-ups, maintenance or first-time whitening.</p>
-<p>Includes: Shade consultation, gingival barrier placement, Lip oil, 15–20 minute whitening treatment, and post-treatment comfort care.</p>
+    description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time. Perfect for maintenance appointments, special events, first-time whitening clients, or anyone looking for a brighter smile without a full-length treatment.</p>
+<p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
+<p>Includes lip oil application, shade assessment, protective gum barrier placement, whitening treatment, and post-care instructions.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93261896',
