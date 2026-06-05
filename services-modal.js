@@ -124,7 +124,7 @@ const SERVICES = {
     ],
     description: `<p>Perfect for weddings, vacations, photos, birthdays, or special events.</p>
 <p>2 people - $600</p>
-<p>Includes 2 professional whitening treatments (1.5 hrs)<br><em>2 Free on-the-go whitening pens</em></p><p><em>Please contact for larger parties and mobile inquiries. We are available to come to you!</em></p>`,
+<p>Includes 2 Signature Saltwater Whitening treatments (1.5 hrs)<br><em>2 Free on-the-go whitening pens</em></p><p><em>Please contact for larger parties and mobile inquiries. We are available to come to you!</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93262904',
   },
