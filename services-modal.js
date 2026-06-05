@@ -186,11 +186,14 @@ const SERVICES = {
 
   'takehome-kit': {
     name: 'Take-Home Whitening Kit',
-    price: 'Coming Soon',
+    price: '$75.00',
     images: [
       'images/PEN.jpeg',
     ],
-    description: `<p>Details coming soon.</p>`,
+    description: `<p>Whiten on your schedule with our professional-strength take-home whitening kit. Featuring 16% carbamide peroxide gel, this convenient at-home option is designed to gradually brighten your smile while helping minimize sensitivity.</p>
+<p>Perfect for maintaining your whitening results between appointments, extending the benefits of your professional whitening treatment, or achieving additional brightening from the comfort of home. Many clients begin noticing brighter teeth within a few days, with results continuing to develop throughout the whitening process.</p>
+<p>Available as an add-on to any whitening service, or simply stop by the suite to pick up your kit and receive personalized usage instructions.</p>
+<p>Includes professional whitening gel, whitening trays, detailed instructions, and post-care recommendations.</p>`,
     cta: 'Details',
   },
 
