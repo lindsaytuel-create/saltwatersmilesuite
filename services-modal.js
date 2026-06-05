@@ -182,7 +182,7 @@ const SERVICES = {
   },
 
   'glo-pen': {
-    name: 'GLO Whitening Pen',
+    name: 'Take-Home Whitening Pen',
     price: '$40.00',
     images: [
       'images/PEN.jpeg',
