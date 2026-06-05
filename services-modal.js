@@ -94,7 +94,7 @@ const SERVICES = {
     price: '$150.00',
     duration: '45 minutes',
     images: [
-      'images/ExpressGlow2.png',
+      'images/express2.png',
     ],
     description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time. Perfect for maintenance appointments, special events, first-time whitening clients, or anyone looking for a brighter smile without a full-length treatment.</p>
 <p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
