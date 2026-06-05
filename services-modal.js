@@ -184,6 +184,16 @@ const SERVICES = {
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=94106203',
   },
 
+  'takehome-kit': {
+    name: 'Take-Home Whitening Kit',
+    price: 'Coming Soon',
+    images: [
+      'images/PEN.jpeg',
+    ],
+    description: `<p>Details coming soon.</p>`,
+    cta: 'Details',
+  },
+
   'glo-pen': {
     name: 'Take-Home Whitening Pen',
     price: '$40.00',
