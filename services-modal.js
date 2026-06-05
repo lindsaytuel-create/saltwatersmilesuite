@@ -165,6 +165,7 @@ const SERVICES = {
 <p>Includes lip oil application, shade assessment, protective gum barrier placement, whitening treatment, desensitizing treatment, and post-care instructions.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/',
   },
 
   'spot-whitening': {
@@ -179,6 +180,7 @@ const SERVICES = {
 <p>Includes protective gum barrier placement, whitening treatment, and post-care instructions.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/',
   },
 
   'glo-pen': {
