@@ -169,7 +169,7 @@ const SERVICES = {
   },
 
   'spot-whitening': {
-    name: 'Spot Whitening',
+    name: 'Spot Treatment',
     price: '$75.00',
     duration: '30 minutes',
     images: [
@@ -180,7 +180,7 @@ const SERVICES = {
 <p>Includes protective gum barrier placement, whitening treatment, and post-care instructions.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.as.me/',
+    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=94106203',
   },
 
   'glo-pen': {
