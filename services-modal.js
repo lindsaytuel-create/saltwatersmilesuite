@@ -173,7 +173,7 @@ const SERVICES = {
     price: '$75.00',
     duration: '30 minutes',
     images: [
-      'images/Signature2.jpeg',
+      'images/spottreatment.png',
     ],
     description: `<p>Target isolated staining or discoloration on up to six teeth. Ideal for touch-ups, a single darker tooth, or focused whitening in a specific area of the smile.</p>
 <p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
