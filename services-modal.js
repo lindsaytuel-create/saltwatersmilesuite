@@ -96,7 +96,6 @@ const SERVICES = {
     ],
     description: `<p>Our most comprehensive whitening experience for clients seeking maximum brightening in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier and multiple whitening sessions.</p>
 <p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
-<p>Includes lip oil application, shade consultation, protective gum barrier placement, multiple whitening sessions, and post-care instructions.</p>
 <p>Add-on a desensitizing treatment at the end of your service for $25.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
@@ -112,7 +111,6 @@ const SERVICES = {
     ],
     description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time. Perfect for maintenance appointments, special events, first-time whitening clients, or anyone looking for a brighter smile without a full-length treatment.</p>
 <p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
-<p>Includes lip oil application, shade assessment, protective gum barrier placement, whitening treatment, and post-care instructions.</p>
 <p>Add-on a desensitizing treatment at the end of your service for $25.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
