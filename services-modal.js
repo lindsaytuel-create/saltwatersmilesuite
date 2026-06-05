@@ -153,6 +153,34 @@ const SERVICES = {
     note: 'Add-on to any whitening treatment at check-out.',
   },
 
+  'sensitive-whitening': {
+    name: 'Sensitive Whitening',
+    price: '$175.00',
+    duration: '45 minutes',
+    images: [
+      'images/desensitizing.png',
+    ],
+    description: `<p>Designed specifically for sensitivity-prone clients, first-time whitening clients, or anyone seeking a gentler whitening experience. This service combines professional whitening with a desensitizing treatment to maximize comfort while still achieving noticeable brightening.</p>
+<p>A great option for clients who have experienced sensitivity with whitening treatments in the past. Results continue to develop over the following several days after treatment.</p>
+<p>Includes lip oil application, shade assessment, protective gum barrier placement, whitening treatment, desensitizing treatment, and post-care instructions.</p>
+<p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
+    cta: 'Book Now',
+  },
+
+  'spot-whitening': {
+    name: 'Spot Whitening',
+    price: '$75.00',
+    duration: '30 minutes',
+    images: [
+      'images/Signature2.jpeg',
+    ],
+    description: `<p>Target isolated staining or discoloration on up to six teeth. Ideal for touch-ups, a single darker tooth, or focused whitening in a specific area of the smile.</p>
+<p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
+<p>Includes protective gum barrier placement, whitening treatment, and post-care instructions.</p>
+<p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
+    cta: 'Book Now',
+  },
+
   'glo-pen': {
     name: 'GLO Whitening Pen',
     price: '$40.00',
