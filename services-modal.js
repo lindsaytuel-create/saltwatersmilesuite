@@ -96,7 +96,9 @@ const SERVICES = {
     ],
     description: `<p>Our most comprehensive whitening experience for clients seeking maximum brightening in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier and multiple whitening sessions.</p>
 <p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
-<p>Includes lip oil application, shade consultation, protective gum barrier placement, multiple whitening sessions, and post-care instructions.</p><p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
+<p>Includes lip oil application, shade consultation, protective gum barrier placement, multiple whitening sessions, and post-care instructions.</p>
+<p>Add-on a desensitizing treatment at the end of your service for $25.</p>
+<p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93260957',
   },
@@ -111,6 +113,7 @@ const SERVICES = {
     description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time. Perfect for maintenance appointments, special events, first-time whitening clients, or anyone looking for a brighter smile without a full-length treatment.</p>
 <p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
 <p>Includes lip oil application, shade assessment, protective gum barrier placement, whitening treatment, and post-care instructions.</p>
+<p>Add-on a desensitizing treatment at the end of your service for $25.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93261896',
@@ -149,7 +152,7 @@ const SERVICES = {
       'images/serenity.png',
       'images/serenitysession.png',
     ],
-    description: 'Upgrade your experience with bluetooth headphones, a cozy blanket, aromatherapy, a cooling jade eye mask, and 5 minutes of red light LED therapy to help soothe tissues, support circulation within the gums, and improve overall treatment comfort.',
+    description: 'Upgrade your experience with bluetooth headphones, a cozy blanket, aromatherapy, and a cooling jade eye mask.',
     note: 'Add-on to any whitening treatment at check-out.',
   },
 
@@ -166,22 +169,6 @@ const SERVICES = {
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=94106155',
-  },
-
-  'spot-whitening': {
-    name: 'Spot Treatment',
-    price: '$75.00',
-    duration: '30 minutes',
-    images: [
-      'images/spottreatment.png',
-    ],
-    description: `<p>Target isolated staining or discoloration on up to six teeth. Ideal for touch-ups, a single darker tooth, or focused whitening in a specific area of the smile.</p>
-<p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
-<p>Includes protective gum barrier placement, whitening treatment, and post-care instructions.</p>
-<p><em>Please note: Whitening treatments are most effective on external (surface) stains. Certain types of discoloration caused by trauma, dental restorations, medications, or internal tooth staining may not respond to whitening treatment.</em></p>
-<p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
-    cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=94106203',
   },
 
   'takehome-kit': {
@@ -209,17 +196,7 @@ const SERVICES = {
     note: 'Choose as an add-on to a service when booking.',
   },
 
-  'red-light': {
-    name: 'Calming Red-Light Add-on',
-    price: '$10.00',
-    duration: '10 minutes',
-    images: [
-      'images/Redlight1.png',
-    ],
-    description: `<p>Our Red LED light is used to help soothe tissues, support circulation within the gums, and improve overall treatment comfort.</p>
-<p>Low-level light therapy (or photobiomodulation) stimulates cellular energy production, supporting tissue oxygenation and regulating inflammation. When applied to the mouth post-whitening, it counteracts the oxidative stress caused by bleaching agents.</p>`,
-    note: 'Add on to any treatment during check out.',
-  },
+
 
   'gift-card': {
     name: 'Gift Card',
