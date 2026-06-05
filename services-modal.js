@@ -96,9 +96,7 @@ const SERVICES = {
     ],
     description: `<p>Our most comprehensive whitening experience for clients seeking maximum brightening in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier and multiple whitening sessions.</p>
 <p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
-<p>Includes lip oil application, shade consultation, protective gum barrier placement, multiple whitening sessions, and post-care instructions.</p>
-<p>Add-on a stain protection serum to help protect your smile.</p>
-<p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
+<p>Includes lip oil application, shade consultation, protective gum barrier placement, multiple whitening sessions, and post-care instructions.</p><p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93260957',
   },
@@ -126,9 +124,7 @@ const SERVICES = {
     ],
     description: `<p>Perfect for weddings, vacations, photos, birthdays, or special events.</p>
 <p>2 people - $600</p>
-<p>Includes 2 professional whitening treatments (1.5 hrs)<br><em>2 Free on-the-go whitening pens</em></p>
-<p>Add-on a stain protection serum to help protect your smile.</p>
-<p><em>Please contact for larger parties and mobile inquiries. We are available to come to you!</em></p>`,
+<p>Includes 2 professional whitening treatments (1.5 hrs)<br><em>2 Free on-the-go whitening pens</em></p><p><em>Please contact for larger parties and mobile inquiries. We are available to come to you!</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93262904',
   },
@@ -164,19 +160,6 @@ const SERVICES = {
       'images/GloPen.png',
     ],
     description: `<p>Glo whitening pen is the most convenient, mess-free way to whiten without sensitivity. Clinically proven to whiten after just one application–formulated with 12% hydrogen peroxide and infused with plant-based antimicrobials and antioxidants.</p>`,
-    note: 'Choose as an add-on to a service when booking.',
-  },
-
-  'serum': {
-    name: 'Stain Protection Serum',
-    price: '$75.00',
-    images: [
-      'images/StainSerum.png',
-    ],
-    description: `<p>Up to 3 Months of Stain Protection – Helps protect whitening results from everyday staining.</p>
-<p>• Biomimetic Enamel Remineralization – Powered by nano-hydroxyapatite to help repair and strengthen enamel.</p>
-<p>• Post-Treatment Enamel Recovery – Supports enamel restoration and strengthening following whitening or aligner therapy.</p>
-<p>• Restoration-Safe, Fluoride-Free Formula – Vegan and cruelty-free; safe for veneers, crowns, and bridges.</p>`,
     note: 'Choose as an add-on to a service when booking.',
   },
 
