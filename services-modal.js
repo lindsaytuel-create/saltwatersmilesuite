@@ -88,7 +88,7 @@ const SERVICES = {
   },
 
   'signature-whitening': {
-    name: 'Signature Saltwater Glow Whitening',
+    name: 'Signature Saltwater Whitening',
     price: '$350.00',
     duration: '75 minutes',
     images: [
@@ -102,7 +102,7 @@ const SERVICES = {
   },
 
   'coastal-whitening': {
-    name: 'Coastal Express Glow Whitening',
+    name: 'Coastal Express Whitening',
     price: '$150.00',
     duration: '45 minutes',
     images: [
