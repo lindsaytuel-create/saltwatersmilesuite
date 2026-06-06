@@ -11,7 +11,7 @@ main {
 /* ── Page title ────────────────────────── */
 .faq-page-title {
   font-family: var(--font-serif);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 0.04em;
   color: var(--text);
@@ -30,7 +30,7 @@ main {
 /* ── Section header ────────────────────── */
 .faq-section-title {
   font-family: var(--font-serif);
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: var(--text);
   text-align: center;
