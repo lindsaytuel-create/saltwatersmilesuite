@@ -63,7 +63,7 @@ main {
 
 .faq-question span:first-child {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--text);
   line-height: 1.4;
@@ -94,7 +94,7 @@ main {
 
 .faq-answer p {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: var(--text);
   line-height: 1.75;
@@ -110,7 +110,7 @@ main {
 
 .faq-answer ul li {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--text);
   line-height: 1.75;
   padding-left: 1.2rem;
