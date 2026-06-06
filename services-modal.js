@@ -97,7 +97,6 @@ const SERVICES = {
       'images/express2.png',
     ],
     description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time. Perfect for maintenance appointments, special events, first-time whitening clients, or anyone looking for a brighter smile without a full-length treatment.</p>
-<p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
 <p>Add-on a desensitizing treatment at the end of your service for $25.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
