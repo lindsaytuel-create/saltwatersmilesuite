@@ -79,7 +79,7 @@ const SERVICES = {
     price: '$350.00',
     duration: '75 minutes',
     images: [
-      'images/signature4.png',
+      'images/signaturesaltwaterwhitening.png',
     ],
     description: `<p>Our most comprehensive whitening experience for clients seeking maximum brightening in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier and multiple whitening sessions.</p>
 <p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
