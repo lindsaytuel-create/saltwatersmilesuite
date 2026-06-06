@@ -141,7 +141,7 @@ const SERVICES = {
   },
 
   'takehome-kit': {
-    name: 'Take-Home Whitening Kit',
+    name: 'Saltwater Brightening Kit',
     price: '$60.00',
     images: [
       'images/takehomekit.jpeg',
