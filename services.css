@@ -98,6 +98,7 @@ main {
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
+  filter: sepia(8%) saturate(105%) brightness(103%);
 }
 
 /* logo placeholder */
