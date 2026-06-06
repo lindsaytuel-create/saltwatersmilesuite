@@ -65,8 +65,8 @@ main {
 
 .category-divider span {
   font-family: var(--font-sans);
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 500;
   letter-spacing: 0.22em;
   color: var(--text-muted);
   text-transform: uppercase;
