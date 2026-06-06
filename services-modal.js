@@ -94,7 +94,7 @@ const SERVICES = {
     price: '$150.00',
     duration: '45 minutes',
     images: [
-      'images/express2.png',
+      'images/coastalexpress22.png',
     ],
     description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time. Perfect for maintenance appointments, special events, first-time whitening clients, or anyone looking for a brighter smile without a full-length treatment.</p>
 <p>Add-on a desensitizing treatment at the end of your service for $25.</p>
