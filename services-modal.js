@@ -80,6 +80,7 @@ const SERVICES = {
     duration: '75 minutes',
     images: [
       'images/signaturesaltwaterwhitening.png',
+      'images/signature4.png',
     ],
     description: `<p>Our most comprehensive whitening experience for clients seeking maximum brightening in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier and multiple whitening sessions.</p>
 <p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
@@ -95,6 +96,7 @@ const SERVICES = {
     duration: '45 minutes',
     images: [
       'images/coastalexpress22.png',
+      'images/express2.png',
     ],
     description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time. Perfect for maintenance appointments, special events, first-time whitening clients, or anyone looking for a brighter smile without a full-length treatment.</p>
 <p>Add-on a desensitizing treatment at the end of your service for $25.</p>
