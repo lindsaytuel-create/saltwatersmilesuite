@@ -37,7 +37,7 @@ const SERVICES = {
       'images/ButterflyGem.png',
       'images/Butterfly2.jpeg',
       'images/heartgem.png',
-      'images/gemparty2.png',
+      'images/gempartymatches.png',
     ],
     description: `<p>Stand out with one-of-a-kind specialty gems including hearts, stars, flowers, and more. These premium gems are applied with the same safe, non-invasive technique and are designed to make your smile truly unforgettable.</p>
 <p>Final pricing depends on design and gem selection.</p>
@@ -63,7 +63,7 @@ const SERVICES = {
     name: 'Gem Party',
     price: 'starting at $300',
     images: [
-      'images/gemparty2.png',
+      'images/gempartymatches.png',
     ],
     description: `<p>Make your next birthday, girls' night, bridal event, or special occasion sparkle with a tooth gem party.</p>
 <p>This package includes <strong>10 single crystal gems to split among your group however you'd like</strong>. Choose one gem per person, multiple gems for a few guests, or any combination that works for your party.</p>
