@@ -80,9 +80,7 @@ const SERVICES = {
     images: [
       'images/womanwhitening.png',
     ],
-    description: `<p>Our most comprehensive whitening experience for clients seeking maximum brightening in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier and multiple whitening sessions.</p>
-<p>Many clients notice immediate brightening, with results continuing to develop over the following several days.</p>
-<p>Add-on a desensitizing treatment at the end of your service for $25.</p>
+    description: `<p>Our most comprehensive whitening experience for clients seeking maximum brightening in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier and multiple whitening sessions.</p><p>Add-on a desensitizing treatment at the end of your service for $25.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93260957',
