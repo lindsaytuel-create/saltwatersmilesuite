@@ -90,7 +90,7 @@ const SERVICES = {
 
   'coastal-whitening': {
     name: 'Coastal Express Whitening',
-    price: '$174.00',
+    price: '$175.00',
     duration: '40 minutes',
     images: [
       'images/manwhitening.png',
