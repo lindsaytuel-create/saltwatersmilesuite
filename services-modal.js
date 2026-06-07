@@ -132,7 +132,7 @@ const SERVICES = {
     name: 'Serenity Session Add-on',
     price: '$25.00',
     images: [
-      'images/cozyblanet.png',
+      'images/cozyblanket.png',
     ],
     description: 'Upgrade your experience with bluetooth headphones, a cozy blanket, aromatherapy, and a cooling jade eye mask.',
     note: 'Add-on to any whitening treatment at check-out.',
