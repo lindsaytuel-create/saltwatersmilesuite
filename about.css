@@ -28,7 +28,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   height: 58%;
-  background: var(--olive);
+  background: #4a6672;
   z-index: 1;
 }
 
