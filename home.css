@@ -7,13 +7,16 @@
 .hero {
   width: 100%;
   line-height: 0;
+  max-height: 80vh;
+  overflow: hidden;
 }
 
 .hero img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
+  object-position: center top;
 }
 
 /* ── CTA Strip ─────────────────────────── */
