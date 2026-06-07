@@ -134,7 +134,7 @@ const SERVICES = {
     images: [
       'images/cozyblanket.png',
     ],
-    description: 'Upgrade your experience with bluetooth headphones, a cozy blanket, aromatherapy, and a cooling jade eye mask.',
+    description: 'Upgrade your experience with noise cancelling headphones, a cozy blanket, aromatherapy, and a cooling jade eye mask.',
     note: 'Add-on to any whitening treatment at check-out.',
   },
 
