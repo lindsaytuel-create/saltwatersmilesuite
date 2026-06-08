@@ -171,6 +171,7 @@ const SERVICES = {
     ],
     description: 'Give the gift of a glowing smile. Saltwater Smile Suite gift cards are redeemable for any service or product. Available in any amount starting at $25 — the perfect gift for birthdays, holidays, or just because.',
     cta: 'Buy Now',
+    bookingUrl: 'https://app.squareup.com/gift/ML6BCRVRJ1Q3M/order',
   },
 };
 
