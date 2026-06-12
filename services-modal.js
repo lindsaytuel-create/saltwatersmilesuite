@@ -117,7 +117,7 @@ const SERVICES = {
     name: 'Desensitizing Treatment',
     price: '$25.00',
     images: [
-      'images/desensitizing.png',
+      'images/desensitizertx.png',
     ],
     description: `<p>While mild tooth sensitivity after whitening is uncommon, it can happen and is usually temporary. This treatment is a great option if you are prone to sensitivity or want extra comfort after your whitening appointment.</p>
 <p>Schedule a desensitizing treatment as an add-on to any whitening service or as a stand-alone maintenance treatment for occasional tooth sensitivity. A professional desensitizing gel is applied after the whitening process is complete to help calm the teeth, support comfort, and reduce post-whitening sensitivity.</p>
