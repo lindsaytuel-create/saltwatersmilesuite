@@ -29,8 +29,8 @@ body::after {
   background-image: url("images/servicebackground.png");
   background-size: cover;
   background-position: center;
-  opacity: 0.45;
-  filter: blur(2px);
+  opacity: 0.82;
+  filter: blur(0.5px);
   pointer-events: none;
   z-index: 0;
 }
