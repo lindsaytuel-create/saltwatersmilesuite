@@ -28,10 +28,9 @@ body::after {
   inset: 0;
   background-image: url("images/servicebackground.png");
   background-size: cover;
-  background-position: center right;
-  opacity: 0.12;
-  filter: blur(6px) grayscale(30%);
-  mix-blend-mode: multiply;
+  background-position: center;
+  opacity: 0.45;
+  filter: blur(2px);
   pointer-events: none;
   z-index: 0;
 }
