@@ -117,7 +117,7 @@ const SERVICES = {
     name: 'Desensitizing Treatment',
     price: '$25.00',
     images: [
-      'images/desensitizertx.png',
+      'images/dgel.png',
       'images/desensitizing.png',
     ],
     description: `<p>While mild tooth sensitivity after whitening is uncommon, it can happen and is usually temporary. This treatment is a great option if you are prone to sensitivity or want extra comfort after your whitening appointment.</p>
