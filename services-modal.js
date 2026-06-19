@@ -234,6 +234,7 @@ function openModal(serviceId) {
 
   // thumbnails
   modalThumbs.innerHTML = '';
+  modalThumbs.style.display = currentImages.length > 1 ? '' : 'none';
   currentImages.forEach((src, i) => {
     const thumb = document.createElement('button');
     thumb.className = 'thumb' + (i === 0 ? ' active' : '');
