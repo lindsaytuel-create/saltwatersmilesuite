@@ -438,6 +438,7 @@ main {
 /* ── Gallery side ──────────────────────── */
 .modal-gallery {
   display: flex;
+  flex-direction: column;
   flex: 0 0 50%;
   overflow: hidden;
   background: #111;
@@ -445,10 +446,10 @@ main {
 
 .modal-thumbs {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 6px;
-  padding: 10px;
-  overflow-y: auto;
+  padding: 8px 10px;
+  overflow-x: auto;
   background: #1a1a1a;
   flex-shrink: 0;
 }
@@ -632,7 +633,7 @@ main {
     height: 52vw;
     max-height: 260px;
   }
-  .modal-thumbs { flex-direction: row; flex: none; overflow-x: auto; padding: 8px; }
+  .modal-thumbs { flex: none; padding: 6px 8px; }
   .thumb { width: 48px; height: 48px; flex-shrink: 0; }
   .modal-main-wrap { flex: 1; height: 100%; }
   .modal-info { padding: 1.25rem 1rem 1.5rem; overflow-y: visible; }
