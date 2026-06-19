@@ -186,13 +186,21 @@ const modalName   = document.getElementById('modalName');
 const modalPrice  = document.getElementById('modalPrice');
 const modalDuration = document.getElementById('modalDuration');
 const modalDesc   = document.getElementById('modalDesc');
-const descExpandBtn = document.getElementById('descExpandBtn');
 const modalColorNote = document.getElementById('modalColorNote');
 const modalNote   = document.getElementById('modalNote');
 const modalOptions = document.getElementById('modalOptions');
 const modalCta    = document.getElementById('modalCta');
+const modalBody   = document.getElementById('modalBody');
+const modalScrollHint = document.getElementById('modalScrollHint');
 const galleryPrev = document.getElementById('galleryPrev');
 const galleryNext = document.getElementById('galleryNext');
+
+function updateScrollHint() {
+  const moreBelow = modalBody.scrollHeight - modalBody.scrollTop - modalBody.clientHeight > 8;
+  modalScrollHint.classList.toggle('hidden', !moreBelow);
+}
+
+modalBody.addEventListener('scroll', updateScrollHint);
 
 let currentImages = [];
 let currentIndex  = 0;
@@ -216,14 +224,6 @@ function openModal(serviceId) {
   modalPrice.textContent = s.price;
   modalDuration.innerHTML = s.duration ? `<em>${s.duration}</em>` : '';
   modalDesc.innerHTML    = s.description || '';
-  modalDesc.classList.remove('expanded');
-  descExpandBtn.style.display = 'none';
-  descExpandBtn.textContent = '… expand';
-  requestAnimationFrame(() => {
-    if (modalDesc.scrollHeight > modalDesc.clientHeight + 2) {
-      descExpandBtn.style.display = '';
-    }
-  });
   modalColorNote.textContent = s.colorNote || '';
   modalNote.textContent  = s.note || '';
   modalCta.textContent = s.cta || 'Book Now';
@@ -274,6 +274,9 @@ function openModal(serviceId) {
   modal.classList.add('open');
   modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
+
+  modalBody.scrollTop = 0;
+  requestAnimationFrame(updateScrollHint);
 }
 
 function closeModal() {
@@ -294,10 +297,6 @@ document.querySelectorAll('[data-service]').forEach(el => {
 modalClose.addEventListener('click', closeModal);
 modalBackdrop.addEventListener('click', closeModal);
 
-descExpandBtn.addEventListener('click', () => {
-  const expanded = modalDesc.classList.toggle('expanded');
-  descExpandBtn.textContent = expanded ? '↑ collapse' : '… expand';
-});
 
 galleryPrev.addEventListener('click', () => {
   setImage((currentIndex - 1 + currentImages.length) % currentImages.length);

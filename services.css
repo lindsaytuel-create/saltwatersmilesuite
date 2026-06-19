@@ -501,8 +501,7 @@ footer {
   padding: 2.5rem 2rem 2rem;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .modal-name {
@@ -531,9 +530,57 @@ footer {
   margin-bottom: 1.2rem;
 }
 
-.modal-desc-wrap {
+.modal-body-wrap {
   position: relative;
-  margin-bottom: 0.9rem;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: scroll;
+  padding-right: 0.6rem;
+  scrollbar-width: thin;
+  scrollbar-color: #c4aa7a #e7ddc9;
+}
+
+.modal-body::-webkit-scrollbar { width: 7px; }
+.modal-body::-webkit-scrollbar-track { background: #e7ddc9; border-radius: 4px; }
+.modal-body::-webkit-scrollbar-thumb { background: #c4aa7a; border-radius: 4px; }
+.modal-body::-webkit-scrollbar-thumb:hover { background: #b3966a; }
+
+/* fade + arrow hint when more content below */
+.modal-scroll-hint {
+  position: absolute;
+  left: 0;
+  right: 0.6rem;
+  bottom: 0;
+  height: 48px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2px;
+  background: linear-gradient(to bottom, rgba(243, 237, 224, 0), #f3ede0 80%);
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.modal-scroll-hint.hidden { opacity: 0; }
+
+.scroll-chevron {
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #b3966a;
+  animation: chevronBob 1.4s ease-in-out infinite;
+}
+
+@keyframes chevronBob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(3px); }
 }
 
 .modal-desc {
@@ -542,32 +589,11 @@ footer {
   font-weight: 400;
   color: var(--text);
   line-height: 1.75;
-  max-height: 8.75rem;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.modal-desc.expanded {
-  max-height: 600px;
+  margin-bottom: 0.9rem;
 }
 
 .modal-desc p { margin-bottom: 0.8rem; }
 .modal-desc p:last-child { margin-bottom: 0; }
-
-.desc-expand-btn {
-  background: none;
-  border: none;
-  padding: 0;
-  font-family: var(--font-serif);
-  font-size: 1rem;
-  font-style: italic;
-  color: var(--text-muted);
-  cursor: pointer;
-  margin-top: 0.2rem;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-.desc-expand-btn:hover { color: var(--text); }
 
 .modal-color-note {
   font-family: var(--font-serif);
@@ -590,7 +616,6 @@ footer {
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 1.5rem;
-  flex: 1;
 }
 
 .opt-group label {
