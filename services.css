@@ -388,14 +388,20 @@ footer {
   .grid-center-row > * { flex: 0 0 100%; }
 }
 
-/* ── Card hover cursor ─────────────────── */
-.card, .card-no-btn { cursor: pointer; }
-.card { transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+/* ── Card hover & focus ────────────────── */
+.card { cursor: pointer; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
 .card:hover {
   transform: translateY(-3px);
   border-color: rgba(196, 170, 122, 0.8);
   border-top-color: rgba(196, 170, 122, 0.8);
   box-shadow: 0 0 20px rgba(196, 170, 122, 0.6), 0 0 50px rgba(196, 170, 122, 0.4), 0 0 80px rgba(196, 170, 122, 0.2);
+}
+
+/* keyboard focus ring */
+.card:focus-visible,
+.booking-card:focus-visible {
+  outline: 2px solid #a8895c;
+  outline-offset: 3px;
 }
 
 /* ══════════════════════════════════════════

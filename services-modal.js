@@ -204,10 +204,15 @@ modalBody.addEventListener('scroll', updateScrollHint);
 
 let currentImages = [];
 let currentIndex  = 0;
+let currentServiceName = '';
+let lastFocused = null;
 
 function setImage(index) {
   currentIndex = index;
   modalImg.src = currentImages[index];
+  modalImg.alt = currentImages.length > 1
+    ? `${currentServiceName} — photo ${index + 1} of ${currentImages.length}`
+    : currentServiceName;
   galleryPrev.style.display = currentImages.length > 1 ? '' : 'none';
   galleryNext.style.display = currentImages.length > 1 ? '' : 'none';
 }
@@ -216,8 +221,10 @@ function openModal(serviceId) {
   const s = SERVICES[serviceId];
   if (!s) return;
 
+  lastFocused = document.activeElement;
   currentImages = s.images || [];
   currentIndex  = 0;
+  currentServiceName = s.name || '';
 
   // populate fields
   modalName.textContent  = s.name;
@@ -277,20 +284,30 @@ function openModal(serviceId) {
 
   modalBody.scrollTop = 0;
   requestAnimationFrame(updateScrollHint);
+  modalClose.focus();
 }
 
 function closeModal() {
   modal.classList.remove('open');
   modal.setAttribute('aria-hidden', 'true');
   document.body.style.overflow = '';
+  if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
 }
 
-// wire up cards
+// wire up cards as accessible buttons
 document.querySelectorAll('[data-service]').forEach(el => {
-  el.addEventListener('click', e => {
-    // clicking inside the card opens modal
-    // but only if it's the button OR the card itself (not text selection)
-    openModal(el.dataset.service);
+  const titleEl = el.querySelector('h3, .booking-title');
+  const title = titleEl ? titleEl.textContent.trim() : 'service';
+  el.setAttribute('role', 'button');
+  el.setAttribute('tabindex', '0');
+  el.setAttribute('aria-label', `${title} — view details`);
+
+  el.addEventListener('click', () => openModal(el.dataset.service));
+  el.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openModal(el.dataset.service);
+    }
   });
 });
 
@@ -310,4 +327,23 @@ document.addEventListener('keydown', e => {
   if (!modal.classList.contains('open')) return;
   if (e.key === 'ArrowLeft')  setImage((currentIndex - 1 + currentImages.length) % currentImages.length);
   if (e.key === 'ArrowRight') setImage((currentIndex + 1) % currentImages.length);
+  if (e.key === 'Tab') trapFocus(e);
 });
+
+// keep keyboard focus inside the open dialog
+function trapFocus(e) {
+  const focusables = modal.querySelectorAll(
+    'button, [href], select, input, textarea, [tabindex]:not([tabindex="-1"])'
+  );
+  const visible = Array.from(focusables).filter(el => el.offsetParent !== null);
+  if (!visible.length) return;
+  const first = visible[0];
+  const last  = visible[visible.length - 1];
+  if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault();
+    last.focus();
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault();
+    first.focus();
+  }
+}
