@@ -438,35 +438,11 @@ main {
 /* ── Gallery side ──────────────────────── */
 .modal-gallery {
   display: flex;
-  flex-direction: column;
   flex: 0 0 50%;
   overflow: hidden;
   background: #111;
 }
 
-.modal-thumbs {
-  display: flex;
-  flex-direction: row;
-  gap: 6px;
-  padding: 8px 10px;
-  overflow-x: auto;
-  background: #1a1a1a;
-  flex-shrink: 0;
-}
-
-.thumb {
-  width: 58px;
-  height: 58px;
-  border: 2px solid transparent;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  flex-shrink: 0;
-  transition: border-color 0.15s;
-}
-
-.thumb.active { border-color: var(--cream); }
-.thumb:hover  { border-color: rgba(255,255,255,0.5); }
 
 .modal-main-wrap {
   position: relative;
@@ -633,7 +609,6 @@ main {
     height: 52vw;
     max-height: 260px;
   }
-  .modal-thumbs { flex: none; padding: 6px 8px; }
   .thumb { width: 48px; height: 48px; flex-shrink: 0; }
   .modal-main-wrap { flex: 1; height: 100%; }
   .modal-info { padding: 1.25rem 1rem 1.5rem; overflow-y: visible; }

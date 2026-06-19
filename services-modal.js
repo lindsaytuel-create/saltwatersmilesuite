@@ -182,7 +182,6 @@ const modal       = document.getElementById('modal');
 const modalBackdrop = document.getElementById('modalBackdrop');
 const modalClose  = document.getElementById('modalClose');
 const modalImg    = document.getElementById('modalImg');
-const modalThumbs = document.getElementById('modalThumbs');
 const modalName   = document.getElementById('modalName');
 const modalPrice  = document.getElementById('modalPrice');
 const modalDuration = document.getElementById('modalDuration');
@@ -200,11 +199,6 @@ let currentIndex  = 0;
 function setImage(index) {
   currentIndex = index;
   modalImg.src = currentImages[index];
-
-  document.querySelectorAll('.thumb').forEach((t, i) => {
-    t.classList.toggle('active', i === index);
-  });
-
   galleryPrev.style.display = currentImages.length > 1 ? '' : 'none';
   galleryNext.style.display = currentImages.length > 1 ? '' : 'none';
 }
@@ -232,17 +226,6 @@ function openModal(serviceId) {
     modalCta.style.display = 'none';
   }
 
-  // thumbnails
-  modalThumbs.innerHTML = '';
-  modalThumbs.style.display = currentImages.length > 1 ? '' : 'none';
-  currentImages.forEach((src, i) => {
-    const thumb = document.createElement('button');
-    thumb.className = 'thumb' + (i === 0 ? ' active' : '');
-    thumb.style.backgroundImage = `url('${src}')`;
-    thumb.setAttribute('aria-label', `Image ${i + 1}`);
-    thumb.addEventListener('click', () => setImage(i));
-    modalThumbs.appendChild(thumb);
-  });
 
   // options
   modalOptions.innerHTML = '';
