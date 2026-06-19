@@ -186,6 +186,7 @@ const modalName   = document.getElementById('modalName');
 const modalPrice  = document.getElementById('modalPrice');
 const modalDuration = document.getElementById('modalDuration');
 const modalDesc   = document.getElementById('modalDesc');
+const descExpandBtn = document.getElementById('descExpandBtn');
 const modalColorNote = document.getElementById('modalColorNote');
 const modalNote   = document.getElementById('modalNote');
 const modalOptions = document.getElementById('modalOptions');
@@ -215,6 +216,14 @@ function openModal(serviceId) {
   modalPrice.textContent = s.price;
   modalDuration.innerHTML = s.duration ? `<em>${s.duration}</em>` : '';
   modalDesc.innerHTML    = s.description || '';
+  modalDesc.classList.remove('expanded');
+  descExpandBtn.style.display = 'none';
+  descExpandBtn.textContent = '… expand';
+  requestAnimationFrame(() => {
+    if (modalDesc.scrollHeight > modalDesc.clientHeight + 2) {
+      descExpandBtn.style.display = '';
+    }
+  });
   modalColorNote.textContent = s.colorNote || '';
   modalNote.textContent  = s.note || '';
   modalCta.textContent = s.cta || 'Book Now';
@@ -284,6 +293,11 @@ document.querySelectorAll('[data-service]').forEach(el => {
 
 modalClose.addEventListener('click', closeModal);
 modalBackdrop.addEventListener('click', closeModal);
+
+descExpandBtn.addEventListener('click', () => {
+  const expanded = modalDesc.classList.toggle('expanded');
+  descExpandBtn.textContent = expanded ? '↑ collapse' : '… expand';
+});
 
 galleryPrev.addEventListener('click', () => {
   setImage((currentIndex - 1 + currentImages.length) % currentImages.length);
