@@ -401,9 +401,12 @@ footer {
 .card { cursor: pointer; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
 .card:hover {
   transform: translateY(-4px);
-  border-color: rgba(196, 170, 122, 0.55);
+  border-color: rgba(196, 170, 122, 0.8);
   border-top-color: rgba(196, 170, 122, 0.9);
-  box-shadow: 0 12px 30px rgba(58, 63, 45, 0.16), 0 4px 10px rgba(0,0,0,0.06);
+  box-shadow: 0 12px 30px rgba(58, 63, 45, 0.14),
+              0 0 20px rgba(196, 170, 122, 0.6),
+              0 0 50px rgba(196, 170, 122, 0.4),
+              0 0 80px rgba(196, 170, 122, 0.2);
 }
 .card:hover .card-img { transform: scale(1.04); }
 
