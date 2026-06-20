@@ -3,6 +3,37 @@
   --bg: #e5dfd3;
 }
 
+/* ── Announcement ticker ───────────────── */
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #3a3f2d;
+  border-top: 1px solid #c4aa7a;
+  border-bottom: 1px solid #c4aa7a;
+  padding: 0.6rem 0;
+}
+
+.ticker-track {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker-scroll 22s linear infinite;
+}
+
+.ticker-track span {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: #c4aa7a;
+  padding: 0 3rem;
+  text-transform: uppercase;
+}
+
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ── Hero ──────────────────────────────── */
 .hero {
   width: 100%;
