@@ -133,7 +133,7 @@ const SERVICES = {
     images: [
       'images/serenityyyyy.png',
     ],
-    description: 'Upgrade your experience with noise cancelling headphones, a cozy blanket, aromatherapy, and a cooling jade eye mask.',
+    description: 'Upgrade your experience with Bluetooth headphones, aromatherapy, a cooling jade mask, and a plush massage pad layered over your chair.',
     note: 'Add-on to any whitening treatment at check-out.',
   },
 
