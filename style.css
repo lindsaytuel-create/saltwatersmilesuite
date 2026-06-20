@@ -96,10 +96,12 @@ nav {
   transform: translateX(-50%);
   background: var(--bg);
   border: 1px solid var(--divider);
+  border-radius: 8px;
   list-style: none;
   min-width: 210px;
   z-index: 200;
   padding: 0.4rem 0;
+  overflow: hidden;
   box-shadow: 0 6px 20px rgba(0,0,0,0.09);
 }
 

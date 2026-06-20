@@ -60,6 +60,7 @@ main {
   background: var(--cream);
   border: 1px solid rgba(196, 170, 122, 0.22);
   border-top: 2px solid rgba(196, 170, 122, 0.55);
+  border-radius: 12px;
   padding: 2.5rem 2.5rem 2.25rem;
 }
 

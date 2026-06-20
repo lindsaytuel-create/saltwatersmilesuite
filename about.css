@@ -50,6 +50,8 @@ body {
 .about-photo-wrap {
   flex: 0 0 auto;
   width: 360px;
+  border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 8px 40px rgba(0,0,0,0.28);
 }
 

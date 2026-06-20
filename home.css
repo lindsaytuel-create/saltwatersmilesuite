@@ -39,6 +39,7 @@
   padding: 0.6rem 1.8rem;
   background: var(--cream);
   border: 1px solid var(--cream);
+  border-radius: 8px;
   color: var(--text);
   font-family: var(--font-sans);
   font-size: 0.7rem;
@@ -133,6 +134,7 @@
   display: block;
   overflow: hidden;
   border: 1px solid var(--border);
+  border-radius: 12px;
   background: var(--cream);
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -173,6 +175,7 @@
   display: inline-block;
   padding: 0.75rem 2.5rem;
   border: 1px solid var(--olive);
+  border-radius: 8px;
   color: var(--olive);
   font-family: var(--font-sans);
   font-size: 0.72rem;
