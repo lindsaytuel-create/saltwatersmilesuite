@@ -143,6 +143,8 @@ const SERVICES = {
     images: [
       'images/takehomekit.jpeg',
     ],
+    imageFit: 'contain',
+    imageBackground: '#dce9f0',
     description: `<p>Whiten on your schedule with our professional-strength take-home whitening kit. Featuring 16% carbamide peroxide gel, this convenient at-home option is designed to gradually brighten your smile while helping minimize sensitivity.</p>
 <p>Perfect for maintaining your whitening results between appointments, extending the benefits of your professional whitening treatment, or achieving additional brightening from the comfort of home.</p>
 <p>Available as an add-on to any whitening service, or simply stop by the suite to pick up your kit and receive personalized usage instructions.</p>
@@ -225,6 +227,10 @@ function openModal(serviceId) {
   currentImages = s.images || [];
   currentIndex  = 0;
   currentServiceName = s.name || '';
+
+  modalImg.style.objectFit = s.imageFit || 'cover';
+  modalImg.style.objectPosition = s.imagePosition || 'center center';
+  modalImg.parentElement.style.background = s.imageBackground || '';
 
   // populate fields
   modalName.textContent  = s.name;
