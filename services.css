@@ -711,3 +711,10 @@ footer {
   .modal-name { font-size: 1.4rem; padding-right: 2.5rem; }
   .modal-btn { margin-top: 1.5rem; }
 }
+
+.footer-mobile-note {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: #c8bfae;
+  font-style: italic;
+}

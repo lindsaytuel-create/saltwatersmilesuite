@@ -129,7 +129,7 @@ const SERVICES = {
 
   'serenity-session': {
     name: 'Serenity Session Add-on',
-    price: '$25.00',
+    price: '$30.00',
     images: [
       'images/serenityyyyy.png',
     ],
