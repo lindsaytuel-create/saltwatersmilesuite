@@ -56,6 +56,12 @@ body {
   margin: 0;
 }
 
+.contact-value a {
+  color: var(--olive);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* Center: logo */
 .contact-logo-wrap {
   display: flex;
