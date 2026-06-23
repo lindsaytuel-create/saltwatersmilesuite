@@ -44,23 +44,28 @@
     </nav>
 
     <main class="gallery-main">
-      <div class="gallery-coming-soon">
 
-        <div class="gallery-sparkle" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="18" fill="currentColor"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
-        </div>
-
-        <p class="gallery-eyebrow">Gallery</p>
-        <h1 class="gallery-title">Coming Soon</h1>
+      <div class="gallery-header">
+        <p class="gallery-eyebrow">✦ Our Work ✦</p>
+        <h1 class="gallery-title">Gallery</h1>
         <div class="gallery-rule"></div>
-        <p class="gallery-sub">We're curating our collection of smile transformations.<br>Check back soon — beautiful things are on the way.</p>
+      </div>
 
-        <div class="gallery-sparkle gallery-sparkle--sm" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="12" fill="currentColor"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
+      <div class="gallery-masonry">
+
+        <div class="gallery-item gallery-item--video">
+          <video src="images/gem-movie.mov" muted loop playsinline autoplay></video>
         </div>
 
       </div>
+
     </main>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    </div>
 
     <footer>
       <div class="footer-inner">
@@ -79,5 +84,22 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxClose = document.getElementById('lightboxClose');
+
+      document.querySelectorAll('.gallery-item').forEach(item => {
+        item.addEventListener('click', () => {
+          lightboxImg.src = item.dataset.src;
+          lightboxImg.alt = item.querySelector('img').alt;
+          lightbox.classList.add('open');
+        });
+      });
+
+      lightboxClose.addEventListener('click', () => lightbox.classList.remove('open'));
+      lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.classList.remove('open'); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
+    </script>
   </body>
 </html>
