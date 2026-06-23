@@ -103,6 +103,30 @@ body {
   filter: brightness(1);
 }
 
+/* ── Stacked pair ───────────────────────── */
+.gallery-item--stack {
+  break-inside: avoid;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.gallery-item--stack .gallery-item {
+  margin-bottom: 0;
+}
+
+.gallery-item--horizontal {
+  aspect-ratio: 5 / 3;
+}
+
+.gallery-item--horizontal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
 /* ── Video items ────────────────────────── */
 .gallery-item--video {
   max-width: 220px;
