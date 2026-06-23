@@ -85,6 +85,10 @@ body {
   border-color: rgba(196, 170, 122, 0.7);
 }
 
+.gallery-item--video {
+  max-width: 320px;
+}
+
 /* ── Lightbox ───────────────────────────── */
 .lightbox {
   display: none;

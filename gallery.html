@@ -89,6 +89,8 @@
       const lightboxImg = document.getElementById('lightboxImg');
       const lightboxClose = document.getElementById('lightboxClose');
 
+      document.querySelectorAll('.gallery-item video').forEach(v => v.playbackRate = 1.5);
+
       document.querySelectorAll('.gallery-item').forEach(item => {
         item.addEventListener('click', () => {
           lightboxImg.src = item.dataset.src;
