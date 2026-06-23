@@ -117,7 +117,7 @@ body {
 }
 
 .gallery-item--horizontal {
-  aspect-ratio: 5 / 3;
+  aspect-ratio: 5 / 2;
 }
 
 .gallery-item--horizontal img {
