@@ -16,7 +16,7 @@ const SERVICES = {
   'swarovski-gems': {
     name: 'Swarovski Fairy Dust Gems',
     price: 'from $60.00',
-    duration: '45 minutes',
+    duration: '30 minutes',
     images: [
       'images/fairydust111.png',
       'images/fairydust3.png',
@@ -80,7 +80,8 @@ const SERVICES = {
     images: [
       'images/womanwhitening.png',
     ],
-    description: `<p>Our most comprehensive whitening experience for clients seeking maximum brightening in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier and multiple whitening sessions.</p><p>Add-on a desensitizing treatment at the end of your service for $25.</p>
+    description: `<p>Our maximum whitening experience is designed for clients seeking the brightest result possible in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier to help prevent sensitivity. This service includes 3–4 whitening rounds lasting approximately 15 minutes each for a more elevated whitening treatment.</p>
+<p>Add-on a desensitizing treatment at the end of your service for $25.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93260957',
@@ -89,11 +90,12 @@ const SERVICES = {
   'coastal-whitening': {
     name: 'Coastal Express Whitening',
     price: '$175.00',
-    duration: '40 minutes',
+    duration: '45 minutes',
     images: [
       'images/manwhitening.png',
     ],
-    description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time. Perfect for maintenance appointments, special events, first-time whitening clients, or anyone looking for a brighter smile without a full-length treatment.</p>
+    description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time.</p>
+<p>Your appointment includes nourishing lip oil, placement of a protective gum barrier to help prevent sensitivity, and 1–2 whitening rounds lasting approximately 15 minutes each. Perfect for maintenance appointments, special events, first-time whitening clients, or anyone looking for a brighter smile without a full-length treatment.</p>
 <p>Add-on a desensitizing treatment at the end of your service for $25.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
