@@ -86,7 +86,15 @@ body {
 }
 
 .gallery-item--video {
-  max-width: 320px;
+  max-width: 220px;
+}
+
+.gallery-item--video video {
+  filter: brightness(0.75) !important;
+}
+
+.gallery-item--video:hover video {
+  filter: brightness(0.88) !important;
 }
 
 /* ── Lightbox ───────────────────────────── */
