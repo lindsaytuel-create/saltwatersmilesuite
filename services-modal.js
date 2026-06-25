@@ -135,7 +135,7 @@ const SERVICES = {
     name: 'Serenity Session Add-on',
     price: '$30.00',
     images: [
-      'images/serenityyyyy.png',
+      'images/serenitysessionphoto.png',
     ],
     description: 'Upgrade your experience with Bluetooth headphones, hydrogel undereye patches, and a plush massage pad layered over your chair.',
     note: 'Add-on to any whitening treatment at check-out.',
