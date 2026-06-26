@@ -91,6 +91,10 @@ body {
   text-align: center;
 }
 
+.about-text-box p + p {
+  margin-top: 1.1rem;
+}
+
 .about-text-box em {
   font-style: italic;
 }
