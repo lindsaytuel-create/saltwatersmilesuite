@@ -112,7 +112,7 @@ body {
 
 /* ── Portrait photo (matches video size) ── */
 .gallery-item--portrait {
-  width: 220px;
+  width: 175px;
   aspect-ratio: 4 / 5;
   flex-shrink: 0;
 }
@@ -150,7 +150,7 @@ body {
 
 /* ── Video items ────────────────────────── */
 .gallery-item--video {
-  max-width: 220px;
+  max-width: 175px;
   aspect-ratio: 4 / 5;
 }
 
