@@ -53,30 +53,35 @@
       <div class="gallery-grid">
 
         <!-- Row 1 -->
-        <div class="gallery-row">
-          <div class="gallery-item gallery-item--video">
-            <video src="images/gemmovie2.MOV" muted loop playsinline autoplay></video>
-          </div>
-
-          <div class="gallery-item gallery-item--video">
-            <video src="images/whiteningvideo.MOV" muted loop playsinline autoplay></video>
-          </div>
+        <div class="gallery-item gallery-item--video">
+          <video src="images/gemmovie2.MOV" muted loop playsinline autoplay></video>
+        </div>
+        <div class="gallery-item gallery-item--video">
+          <video src="images/whiteningvideo.MOV" muted loop playsinline autoplay></video>
+        </div>
+        <div class="gallery-item" data-src="images/gallerygem.png">
+          <img src="images/gallerygem.png" alt="Tooth gem" loading="lazy" />
         </div>
 
         <!-- Row 2 -->
-        <div class="gallery-row">
-          <div class="gallery-item gallery-item--portrait" data-src="images/gallerygem.png">
-            <img src="images/gallerygem.png" alt="Tooth gem" loading="lazy" />
+        <div class="gallery-stack">
+          <div class="gallery-stack__item" data-src="images/before.jpg">
+            <img src="images/before.jpg" alt="Before whitening" loading="lazy" />
           </div>
+          <div class="gallery-stack__item" data-src="images/after.jpg">
+            <img src="images/after.jpg" alt="After whitening" loading="lazy" />
+          </div>
+        </div>
+        <div class="gallery-item gallery-item--video">
+          <video src="images/wendygemvid.MP4" muted loop playsinline autoplay></video>
+        </div>
 
-          <div class="gallery-item--stack">
-            <div class="gallery-item gallery-item--horizontal" data-src="images/before.jpg">
-              <img src="images/before.jpg" alt="Before whitening" loading="lazy" />
-            </div>
-            <div class="gallery-item gallery-item--horizontal" data-src="images/after.jpg">
-              <img src="images/after.jpg" alt="After whitening" loading="lazy" style="filter: brightness(0.95);" />
-            </div>
-          </div>
+        <!-- Row 3 -->
+        <div class="gallery-item" data-src="images/wendygemphoto.jpg">
+          <img src="images/wendygemphoto.jpg" alt="Tooth gem close-up" loading="lazy" />
+        </div>
+        <div class="gallery-item" data-src="images/serenity session.PNG">
+          <img src="images/serenity session.PNG" alt="Serenity session" loading="lazy" />
         </div>
 
       </div>
@@ -113,10 +118,11 @@
 
       document.querySelectorAll('.gallery-item video').forEach(v => v.playbackRate = 1.5);
 
-      document.querySelectorAll('.gallery-item').forEach(item => {
+      document.querySelectorAll('.gallery-item[data-src], .gallery-stack__item[data-src]').forEach(item => {
         item.addEventListener('click', () => {
+          const img = item.querySelector('img');
           lightboxImg.src = item.dataset.src;
-          lightboxImg.alt = item.querySelector('img').alt;
+          lightboxImg.alt = img ? img.alt : '';
           lightbox.classList.add('open');
         });
       });
