@@ -29,6 +29,10 @@
   text-transform: uppercase;
 }
 
+.ticker-track span strong {
+  color: #ffffff;
+}
+
 @keyframes ticker-scroll {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
