@@ -33,7 +33,7 @@ const SERVICES = {
     price: 'from $60.00',
     images: [
       'images/Butterfly2.jpeg',
-      'images/partyparty.png',
+      'images/gemparty2.png',
       'images/redwhitebluegems.jpg',
       'images/celestialgems.jpg',
     ],
@@ -67,7 +67,7 @@ const SERVICES = {
 <p>This package includes <strong>10 single crystal gems to split among your group however you'd like</strong>. Choose one gem per person, multiple gems for a few guests, or any combination that works for your party.</p>
 <p>Available <strong>in-office</strong>, <strong>at your home</strong>, or <strong>at your event/party space</strong>.</p>
 <p><em>For larger parties, mobile events, or specialty gems, please contact us for custom pricing.</em></p>
-<p><strong>Must be booked at least 2 weeks in advance. Participants must be 14 years or older. Guests under 18 require parent/guardian consent.</strong></p>`,
+<p><strong>Must be booked at least 2 weeks in advance. Participants must be 13 years or older. Guests under 18 require parent/guardian consent.</strong></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93263036',
   },
