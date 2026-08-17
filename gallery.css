@@ -132,6 +132,12 @@ body {
   filter: brightness(1);
 }
 
+/* ── Tall images: show whole photo ──────── */
+.gallery-item--contain img {
+  object-fit: contain;
+  background: var(--cream);
+}
+
 /* ── Video brightness ───────────────────── */
 .gallery-item--video video {
   filter: brightness(0.78) !important;
