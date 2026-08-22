@@ -119,6 +119,7 @@ nav {
   padding: 0.55rem 1.2rem;
   font-size: 0.68rem;
   letter-spacing: 0.14em;
+  white-space: nowrap;
   text-transform: uppercase;
   color: var(--text);
   text-decoration: none;
@@ -140,6 +141,8 @@ nav {
   .nav-links { gap: 0.5rem; }
   .nav-links a { font-size: 0.65rem; letter-spacing: 0.08em; }
   .nav-icons { margin-left: 0; }
+  /* Keep the longer therapy label inside the viewport */
+  .nav-sub li a { font-size: 0.6rem; letter-spacing: 0.06em; padding: 0.55rem 0.9rem; }
 }
 
 /* ══════════════════════════════════════════
