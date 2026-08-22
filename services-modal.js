@@ -155,20 +155,6 @@ const SERVICES = {
     cta: 'Details',
   },
 
-  'glo-pen': {
-    name: 'Take-Home Whitening Pen',
-    price: '$40.00',
-    images: [
-      'images/beachpen.png',
-    ],
-    description: `<p>Maintain your brighter smile between whitening appointments with our professional-strength whitening pen. The convenient brush-tip applicator allows for easy, mess-free application at home or on the go.</p>
-<p>Perfect for touch-ups before special events or maintaining your whitening results, this travel-friendly pen helps target new surface stains from coffee, tea, wine, and everyday foods. Many clients notice gradual brightening with consistent use as directed.</p>
-<p>Includes one professional whitening pen and usage instructions.</p>`,
-    note: 'Choose as an add-on to a service when booking.',
-  },
-
-
-
   'gift-card': {
     name: 'Gift Card',
     price: 'from $25.00',
