@@ -42,21 +42,6 @@ const SERVICES = {
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93260550',
   },
 
-  'gem-party': {
-    name: 'Gem Party',
-    price: 'starting at $300',
-    images: [
-      'images/gemparty5.png',
-    ],
-    description: `<p>Make your next birthday, girls' night, bridal event, or special occasion sparkle with a tooth gem party.</p>
-<p>This package includes <strong>10 single crystal gems to split among your group however you'd like</strong>. Choose one gem per person, multiple gems for a few guests, or any combination that works for your party.</p>
-<p>Available <strong>in-office</strong>, <strong>at your home</strong>, or <strong>at your event/party space</strong>.</p>
-<p><em>For larger parties, mobile events, or specialty gems, please contact us for custom pricing.</em></p>
-<p><strong>Must be booked at least 2 weeks in advance. Participants must be 13 years or older. Guests under 18 require parent/guardian consent.</strong></p>`,
-    cta: 'Book Now',
-    bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93263036',
-  },
-
   'signature-whitening': {
     name: 'Signature Saltwater Whitening',
     price: '$350.00',
