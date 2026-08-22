@@ -72,14 +72,15 @@ const SERVICES = {
   },
 
   'coastal-whitening': {
-    name: 'Coastal Express Whitening',
+    name: 'Coastal Express Whitening Touch-Up',
     price: '$175.00',
     duration: '45 minutes',
     images: [
       'images/manwhitening.png',
     ],
-    description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time.</p>
-<p>Your appointment includes nourishing lip oil, placement of a protective gum barrier to help prevent sensitivity, and 1–2 whitening rounds lasting approximately 15 minutes each. Perfect for maintenance appointments, special events, first-time whitening clients, or anyone looking for a brighter smile without a full-length treatment.</p>
+    description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time. This is our touch-up service, created to maintain and extend the results you already have.</p>
+<p>Your appointment includes nourishing lip oil, placement of a protective gum barrier to help prevent sensitivity, and 1–2 whitening rounds lasting approximately 15 minutes each. Ideal for keeping your smile continually bright between treatments, refreshing before a special event, or maintaining your results without a full-length appointment.</p>
+<p>★ New to whitening? We recommend beginning with our <strong>Signature Saltwater Whitening</strong>, which is designed to establish your initial results. The Coastal Express Touch-Up is best suited for smiles that have already been professionally whitened.</p>
 <p>Add-on a desensitizing treatment at the end of your service for $25.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
     cta: 'Book Now',
