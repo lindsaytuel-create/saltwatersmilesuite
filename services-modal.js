@@ -44,7 +44,7 @@ const SERVICES = {
 
   'signature-whitening': {
     name: 'Signature Saltwater Whitening',
-    price: '$350.00',
+    price: '$275.00',
     duration: '75 minutes',
     images: [
       'images/womanwhitening.png',
@@ -74,13 +74,13 @@ const SERVICES = {
 
   'wedding-package': {
     name: 'Glow-Up Duo Package',
-    price: '$600.00',
+    price: '$500.00',
     images: [
       'images/WeddingPackage.png',
     ],
     description: `<p>Perfect for weddings, vacations, photos, birthdays, or special events.</p>
-<p>2 people - $600</p>
-<p>Includes 2 Signature Saltwater Whitening treatments (1.5 hrs) — <em>a $100 savings!</em></p><p><em>Please contact for larger parties and mobile inquiries. We are available to come to you!</em></p>`,
+<p>2 people - $500</p>
+<p>Includes 2 Signature Saltwater Whitening treatments (1.5 hrs) — <em>a $50 savings!</em></p><p><em>Please contact for larger parties and mobile inquiries. We are available to come to you!</em></p>`,
     cta: 'Book Now',
     bookingUrl: 'https://saltwatersmilesuite.as.me/?appointmentType=93262904',
   },
