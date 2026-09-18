@@ -47,8 +47,17 @@
 .hero img {
   width: 100%;
   height: auto;
+  /* Cap the hero on wide screens so it doesn't dominate the page.
+     Crops the decorative leaf border rather than shrinking the mark. */
+  max-height: 56vh;
   display: block;
   object-fit: cover;
+  object-position: center;
+}
+
+/* On phones the image is short already, so let it run full height. */
+@media (max-width: 700px) {
+  .hero img { max-height: none; }
 }
 
 /* ── CTA Strip ─────────────────────────── */
