@@ -102,7 +102,7 @@
   margin: 0 auto;
 }
 
-.intro h2 {
+.intro h1 {
   font-family: var(--font-serif);
   font-size: 2rem;
   font-weight: 400;
