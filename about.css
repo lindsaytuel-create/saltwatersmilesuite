@@ -82,6 +82,24 @@ body {
   z-index: 1;
 }
 
+.about-title {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.about-title::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 1px;
+  background: var(--border);
+  margin: 1rem auto 0;
+}
+
 .about-text-box p {
   font-family: var(--font-serif);
   font-size: 1.15rem;

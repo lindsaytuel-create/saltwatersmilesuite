@@ -19,6 +19,8 @@ body {
   gap: 1.4rem;
 }
 
+h1.loc-name { margin: 0; }
+
 .loc-name,
 .loc-street,
 .loc-city,
