@@ -4,7 +4,7 @@ const SERVICES = {
     price: '$40.00',
     duration: '30 minutes',
     images: [
-      'images/SingleGem.png',
+      'images/SingleGem.jpg',
     ],
     description: `<p>Add a little sparkle to your smile with luxury tooth gems applied in a safe, non-invasive cosmetic service. Create a custom look that's subtle, bold, classy, or playful! Tooth gems are painless, enamel-safe when properly applied, and can last for 6+ months with good care. Whether you want a tiny shimmer or a statement smile, we're here to make your vision shine.</p>
 <p>★ For best results, tooth gem appointments must be scheduled at least 2 weeks after any whitening treatment to allow for proper adhesion.</p>`,
@@ -18,7 +18,7 @@ const SERVICES = {
     price: 'from $60.00',
     images: [
       'images/Butterfly2.jpeg',
-      'images/gemparty2.png',
+      'images/gemparty2.jpg',
       'images/redwhitebluegems.jpg',
       'images/celestialgems.jpg',
     ],
@@ -35,7 +35,7 @@ const SERVICES = {
     price: '$20.00',
     duration: '30 minutes',
     images: [
-      'images/Removal2.png',
+      'images/Removal2.jpg',
     ],
     description: `<p>Safely remove existing tooth gems. This service includes gentle removal of the gem and adhesive, followed by polishing to leave the tooth smooth, clean, and natural-looking. Perfect for changing styles, replacing old gems, or returning to a gem-free smile. Quick, painless, and non-invasive.</p>`,
     cta: 'Book Now',
@@ -47,7 +47,7 @@ const SERVICES = {
     price: '$275.00',
     duration: '75 minutes',
     images: [
-      'images/womanwhitening.png',
+      'images/womanwhitening.jpg',
     ],
     description: `<p>Our maximum whitening experience is designed for clients seeking the brightest result possible in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier to help prevent sensitivity. This service includes 3–4 whitening rounds lasting approximately 15 minutes each for a more elevated whitening treatment.</p>
 <p>Add-on a desensitizing treatment at the end of your service for $25.</p>
@@ -61,7 +61,7 @@ const SERVICES = {
     price: '$175.00',
     duration: '45 minutes',
     images: [
-      'images/manwhitening.png',
+      'images/manwhitening.jpg',
     ],
     description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time. This is our touch-up service, created to maintain and extend the results you already have.</p>
 <p>Your appointment includes nourishing lip oil, placement of a protective gum barrier to help prevent sensitivity, and 1–2 whitening rounds lasting approximately 15 minutes each. Ideal for keeping your smile continually bright between treatments, refreshing before a special event, or maintaining your results without a full-length appointment.</p>
@@ -76,7 +76,7 @@ const SERVICES = {
     name: 'Glow-Up Duo Package',
     price: '$500.00',
     images: [
-      'images/WeddingPackage.png',
+      'images/WeddingPackage.jpg',
     ],
     description: `<p>Perfect for weddings, vacations, photos, birthdays, or special events.</p>
 <p>2 people - $500</p>
@@ -89,8 +89,8 @@ const SERVICES = {
     name: 'Desensitizing Treatment',
     price: '$25.00',
     images: [
-      'images/dgel.png',
-      'images/desensitizing.png',
+      'images/dgel.jpg',
+      'images/desensitizing.jpg',
     ],
     imageFit: 'contain',
     imageBackground: '#ede8ee',
@@ -105,7 +105,7 @@ const SERVICES = {
     name: 'Serenity Session Add-on',
     price: '$30.00',
     images: [
-      'images/serenitysessionphoto.png',
+      'images/serenitysessionphoto.jpg',
     ],
     description: 'Upgrade your experience with Bluetooth headphones, hydrogel undereye patches, and a plush massage pad layered over your chair.',
     note: 'Add-on to any whitening treatment at check-out.',
