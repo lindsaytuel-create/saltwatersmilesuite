@@ -1569,7 +1569,8 @@ body.therapy {
   color: var(--t-slate);
 }
 
-.t-study .t-study-cite {
+.t-study .t-study-cite,
+.t-case .t-study-cite {
   margin-top: 0.85rem;
   padding-top: 0.85rem;
   border-top: 1px solid var(--t-line);
@@ -1578,7 +1579,8 @@ body.therapy {
   color: var(--t-text);
 }
 
-.t-study .t-study-cite {
+.t-study .t-study-cite,
+.t-case .t-study-cite {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -1597,6 +1599,92 @@ body.therapy {
 
 .t-study-cite a:hover { opacity: 0.7; }
 
+/* before & after photos from published case reports */
+.t-cases-intro { max-width: 680px; margin: 0 auto; }
+
+.t-cases {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.t-case--breathing { --t-accent: var(--t-teal); }
+.t-case--function  { --t-accent: var(--t-sage-dk); }
+.t-case--growth    { --t-accent: var(--t-indigo); }
+
+.t-case {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  background: var(--t-paper);
+  border: 1px solid var(--t-line);
+  border-left: 3px solid var(--t-accent);
+  border-radius: 5px;
+  padding: 1.5rem 1.75rem 1.5rem 1.5rem;
+}
+
+.t-case-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.t-case-pair figure { margin: 0; }
+
+.t-case-pair img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.t-case-pair figcaption {
+  margin-top: 0.55rem;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--t-slate);
+}
+
+.t-case-pair figure:last-child figcaption { color: var(--t-accent); }
+
+.t-case h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--t-deep);
+  margin-bottom: 0.5rem;
+}
+
+.t-case-body p:not(.t-study-type) {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--t-slate);
+}
+
+.t-case-body p.t-case-tx {
+  margin-top: 0.75rem;
+  font-size: 0.82rem;
+  color: var(--t-text);
+}
+
+.t-case-tx span {
+  margin-right: 0.4rem;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--t-accent);
+}
+
 .t-fine {
   max-width: 620px;
   margin: 1.75rem auto 0;
@@ -1613,4 +1701,5 @@ body.therapy {
   .t-orgs,
   .t-videos { grid-template-columns: 1fr; }
   .t-study { padding: 1.3rem 1.25rem; }
+  .t-case { grid-template-columns: 1fr; gap: 1.25rem; padding: 1.3rem 1.25rem; }
 }
