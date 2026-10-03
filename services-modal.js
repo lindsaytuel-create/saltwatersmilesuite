@@ -52,8 +52,11 @@ const SERVICES = {
     price: '$275.00',
     duration: '75 minutes',
     images: [
+      { src: 'images/signature-before-after.jpg', fit: 'contain' },
       'images/signature-whitening.jpg',
       'images/signature-whitening-2.jpg',
+      { src: 'images/beforeafter.jpg', fit: 'contain' },
+      { src: 'images/beforeafter-signature.jpg', fit: 'contain' },
     ],
     imagePosition: 'center 30%',
     description: `<p>Our maximum whitening experience is designed for clients seeking the brightest result possible in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier to help prevent sensitivity. This service includes 3–4 whitening rounds lasting approximately 15 minutes each for a more elevated whitening treatment.</p>
@@ -159,11 +162,19 @@ modalBody.addEventListener('scroll', updateScrollHint);
 let currentImages = [];
 let currentIndex  = 0;
 let currentServiceName = '';
+let currentService = null;
 let lastFocused = null;
 
+// An image entry is a path, or { src, fit, position } to override the
+// service's imageFit / imagePosition for that one photo (e.g. 'contain'
+// for before-and-after pairs that must show in full).
 function setImage(index) {
   currentIndex = index;
-  modalImg.src = currentImages[index];
+  const entry = currentImages[index];
+  const img = typeof entry === 'string' ? { src: entry } : entry;
+  modalImg.src = img.src;
+  modalImg.style.objectFit = img.fit || currentService.imageFit || 'cover';
+  modalImg.style.objectPosition = img.position || currentService.imagePosition || 'center center';
   modalImg.alt = currentImages.length > 1
     ? `${currentServiceName} — photo ${index + 1} of ${currentImages.length}`
     : currentServiceName;
@@ -179,9 +190,8 @@ function openModal(serviceId) {
   currentImages = s.images || [];
   currentIndex  = 0;
   currentServiceName = s.name || '';
+  currentService = s;
 
-  modalImg.style.objectFit = s.imageFit || 'cover';
-  modalImg.style.objectPosition = s.imagePosition || 'center center';
   modalImg.parentElement.style.background = s.imageBackground || '';
 
   // populate fields
