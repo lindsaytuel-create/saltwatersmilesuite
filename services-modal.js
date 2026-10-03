@@ -61,7 +61,7 @@ const SERVICES = {
     price: '$175.00',
     duration: '45 minutes',
     images: [
-      'images/manwhitening.jpg',
+      'images/coastal-express-whitening.jpg',
     ],
     description: `<p>A quick and effective whitening refresh designed to noticeably brighten your smile in less time. This is our touch-up service, created to maintain and extend the results you already have.</p>
 <p>Your appointment includes nourishing lip oil, placement of a protective gum barrier to help prevent sensitivity, and 1–2 whitening rounds lasting approximately 15 minutes each. Ideal for keeping your smile continually bright between treatments, refreshing before a special event, or maintaining your results without a full-length appointment.</p>
