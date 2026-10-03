@@ -31,13 +31,13 @@ main {
 
 /* ── Nav ───────────────────────────────── */
 nav {
-  background: var(--bg);
+  background: var(--olive);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   padding: 1.1rem 2rem;
-  border-bottom: 1px solid var(--divider);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -51,7 +51,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--text);
+  color: var(--cream);
   font-family: var(--font-sans);
   font-size: 0.72rem;
   font-weight: 400;
@@ -61,10 +61,10 @@ nav {
   transition: color 0.2s;
 }
 
-.nav-links a:hover { color: var(--olive); }
+.nav-links a:hover { color: var(--border); }
 
 .nav-links a.active {
-  border-bottom: 1.5px solid var(--text);
+  border-bottom: 1.5px solid var(--border);
   font-weight: 300;
 }
 
@@ -75,13 +75,13 @@ nav {
 }
 
 .nav-icons a {
-  color: var(--text);
+  color: var(--cream);
   display: flex;
   align-items: center;
   transition: color 0.2s;
 }
 
-.nav-icons a:hover { color: var(--olive); }
+.nav-icons a:hover { color: var(--border); }
 
 /* ── Nav dropdown ──────────────────────── */
 .nav-has-dropdown {
@@ -94,8 +94,8 @@ nav {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--bg);
-  border: 1px solid var(--divider);
+  background: var(--olive-dk);
+  border: 1px solid rgba(196, 170, 122, 0.45);
   border-radius: 8px;
   list-style: none;
   min-width: 210px;
@@ -121,13 +121,13 @@ nav {
   letter-spacing: 0.14em;
   white-space: nowrap;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--cream);
   text-decoration: none;
   border-bottom: none !important;
   transition: color 0.15s;
 }
 
-.nav-sub li a:hover { color: var(--olive); }
+.nav-sub li a:hover { color: var(--border); }
 
 .nav-has-dropdown:hover .nav-sub { display: block; }
 
