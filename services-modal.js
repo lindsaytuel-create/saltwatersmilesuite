@@ -4,8 +4,11 @@ const SERVICES = {
     price: '$40.00',
     duration: '30 minutes',
     images: [
-      'images/SingleGem.jpg',
+      'images/single-tooth-gem.jpg',
+      'images/single-gem-appointment.jpg',
+      'images/star-tooth-gem.jpg',
     ],
+    imagePosition: '30% center',
     description: `<p>Add a little sparkle to your smile with luxury tooth gems applied in a safe, non-invasive cosmetic service. Create a custom look that's subtle, bold, classy, or playful! Tooth gems are painless, enamel-safe when properly applied, and can last for 6+ months with good care. Whether you want a tiny shimmer or a statement smile, we're here to make your vision shine.</p>
 <p>★ For best results, tooth gem appointments must be scheduled at least 2 weeks after any whitening treatment to allow for proper adhesion.</p>`,
     colorNote: 'Various colors available. Add on multiple tooth gems upon checkout. If you have a design in mind, please message us for an inquiry.',
@@ -17,6 +20,8 @@ const SERVICES = {
     name: 'Specialty Tooth Gems',
     price: 'from $60.00',
     images: [
+      'images/specialty-tooth-gems.jpg',
+      'images/kadencegem.jpg',
       'images/Butterfly2.jpeg',
       'images/gemparty2.jpg',
       'images/redwhitebluegems.jpg',
@@ -47,8 +52,10 @@ const SERVICES = {
     price: '$275.00',
     duration: '75 minutes',
     images: [
-      'images/womanwhitening.jpg',
+      'images/signature-whitening.jpg',
+      'images/signature-whitening-2.jpg',
     ],
+    imagePosition: 'center 30%',
     description: `<p>Our maximum whitening experience is designed for clients seeking the brightest result possible in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier to help prevent sensitivity. This service includes 3–4 whitening rounds lasting approximately 15 minutes each for a more elevated whitening treatment.</p>
 <p>Add-on a desensitizing treatment at the end of your service for $25.</p>
 <p><em>If you also want to add a tooth gem there must be a 2 week wait after whitening for proper adhesion of gem.</em></p>`,
