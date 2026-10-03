@@ -287,3 +287,39 @@ footer {
 @media (max-width: 600px) {
   .reviews-grid { grid-template-columns: 1fr; }
 }
+
+/* ── Patient Portal button ──────────────────
+   Hidden by default and revealed only on pages
+   carrying the `therapy` body class, so the
+   cosmetic side never shows it. Any new therapy
+   page picks it up automatically. ────────────── */
+.nav-portal { display: none; }
+
+body.therapy .nav-portal {
+  display: inline-block;
+  padding: 0.42rem 1.05rem;
+  border: 1px solid var(--olive);
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--olive);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+
+body.therapy .nav-portal:hover {
+  background: var(--olive);
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  body.therapy .nav-portal {
+    font-size: 0.6rem;
+    padding: 0.38rem 0.85rem;
+    letter-spacing: 0.1em;
+  }
+}

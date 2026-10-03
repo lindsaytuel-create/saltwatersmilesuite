@@ -40,54 +40,197 @@
 
 /* ── Hero ──────────────────────────────── */
 .hero {
-  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 4.5rem 2rem 5rem;
+  background: #e9e2d4;
+}
+
+/* misty coastline, washed back so it reads as texture behind the text */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url('images/coast-banner.jpg') center 45% / cover no-repeat;
+  filter: blur(1px) saturate(0.6);
+  transform: scale(1.05);
+}
+
+.hero-scrim {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 70% at 50% 50%,
+    rgba(243, 237, 224, 0.93),
+    rgba(243, 237, 224, 0.80) 60%,
+    rgba(233, 226, 212, 0.88) 100%);
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 700px;
+}
+
+/* the circular logo carries the business name, so it is the page's H1 */
+.hero-logo {
+  margin: 0 0 1.1rem;
   line-height: 0;
 }
 
-.hero img {
-  width: 100%;
+.hero-logo img {
+  width: 260px;
   height: auto;
-  display: block;
-  object-fit: cover;
 }
 
-/* ── CTA Strip ─────────────────────────── */
-.cta-strip {
-  background: #4a6672;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 1.1rem 2rem;
-}
-
-.cta-strip p {
-  color: #fff;
+.hero-eyebrow {
   font-family: var(--font-sans);
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
+  color: var(--olive);
+  margin-bottom: 1rem;
 }
 
-.btn-cta {
-  display: inline-block;
-  padding: 0.6rem 1.8rem;
-  background: var(--cream);
-  border: 1px solid var(--cream);
-  border-radius: 8px;
+.hero-rule {
+  width: 56px;
+  height: 1px;
+  background: var(--border);
+  margin: 0 auto 1.4rem;
+}
+
+/* the two services as a matched pair; equal-width columns keep the
+   divider on the centre line */
+.hero-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.25rem;
+  margin-bottom: 1.6rem;
+}
+
+.hero-services a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  width: 19rem;
+  text-decoration: none;
+}
+
+.hero-services strong {
+  font-family: var(--font-serif);
+  font-size: 1.32rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f442f;
+  transition: color 0.2s;
+}
+
+.hero-services a:hover strong { color: #4a6672; }
+
+.hero-services span {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #9a7c4d;
+}
+
+.hero-sep {
+  flex: 0 0 1px;
+  background: var(--divider);
+}
+
+.hero-services .hero-sep { height: 44px; }
+.hero-hours .hero-sep    { height: 32px; opacity: 0.5; }
+
+.hero-lede {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: #6a6252;
+  max-width: 40ch;
+  margin: 0 auto 1.7rem;
+}
+
+.hero-hours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 2.1rem;
+  font-family: var(--font-sans);
   color: var(--text);
+}
+
+.hero-hours > div:not(.hero-sep) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  width: 9.5rem;
+}
+
+.hero-hours span {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.hero-hours strong {
+  font-size: 0.92rem;
+  font-weight: 400;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.hero-btn {
+  width: 15.5rem;
+  padding: 0.85rem 2rem;
+  border-radius: 6px;
   font-family: var(--font-sans);
   font-size: 0.7rem;
+  font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  color: #fff;
+  transition: background 0.2s;
 }
 
-.btn-cta:hover {
-  background: #e8e2d6;
-  border-color: #e8e2d6;
-  color: var(--text);
+.hero-btn--olive       { background: var(--olive); }
+.hero-btn--olive:hover { background: var(--olive-dk); }
+
+/* the slate blue from the original "Ready to glow?" strip */
+.hero-btn--blue       { background: #4a6672; }
+.hero-btn--blue:hover { background: #3d5560; }
+
+@media (max-width: 700px) {
+  .hero { padding: 2.25rem 1.5rem 2.75rem; }
+  .hero-logo { margin-bottom: 0.9rem; }
+  .hero-logo img { width: 180px; }
+
+  /* stacked, so the longer therapy name stays on one line */
+  .hero-services { flex-direction: column; gap: 0.85rem; margin-bottom: 1.3rem; }
+  .hero-services a { width: auto; }
+  .hero-services strong { font-size: 1.15rem; }
+  .hero-services .hero-sep { flex: none; width: 32px; height: 1px; }
+
+  .hero-lede { font-size: 0.88rem; margin-bottom: 1.4rem; }
+  .hero-hours { gap: 1.5rem; margin-bottom: 1.6rem; }
+  .hero-hours > div:not(.hero-sep) { width: auto; flex: 1; }
+  .hero-actions { flex-direction: column; }
+  .hero-btn { width: auto; }
 }
 
 /* ── Intro ─────────────────────────────── */
@@ -102,7 +245,7 @@
   margin: 0 auto;
 }
 
-.intro h1 {
+.intro h2 {
   font-family: var(--font-serif);
   font-size: 2rem;
   font-weight: 400;
@@ -139,6 +282,21 @@
 }
 
 .link-underline:hover { opacity: 0.7; }
+
+.intro-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+  margin-top: 2.25rem;
+}
+
+.intro-social a {
+  display: flex;
+  color: var(--olive);
+  transition: opacity 0.2s;
+}
+
+.intro-social a:hover { opacity: 0.7; }
 
 /* ── Featured Services ─────────────────── */
 .featured {
@@ -232,5 +390,4 @@
 
 @media (max-width: 600px) {
   .featured-grid { grid-template-columns: 1fr; }
-  .cta-strip { flex-direction: column; gap: 0.75rem; }
 }
