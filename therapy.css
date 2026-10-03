@@ -1384,10 +1384,9 @@ body.therapy {
 
 .t-jump a:hover { background: var(--t-deep); color: #fff; }
 
-#videos, #research, #learn-more { scroll-margin-top: 120px; }
+#videos, #before-after, #research, #learn-more { scroll-margin-top: 120px; }
 
-/* three starting points, linking into the rest of the section */
-.t-start,
+/* organisations to keep learning from */
 .t-orgs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1395,7 +1394,6 @@ body.therapy {
   margin-top: 2.25rem;
 }
 
-.t-start a,
 .t-org {
   display: flex;
   flex-direction: column;
@@ -1408,10 +1406,6 @@ body.therapy {
   text-decoration: none;
 }
 
-.t-start a { transition: transform 0.2s, box-shadow 0.2s; }
-.t-start a:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(51, 73, 92, 0.1); }
-
-.t-start h3,
 .t-org h3 {
   font-family: var(--font-serif);
   font-size: 1.3rem;
@@ -1421,7 +1415,6 @@ body.therapy {
   margin-bottom: 0.55rem;
 }
 
-.t-start p,
 .t-org p {
   font-family: var(--font-sans);
   font-size: 0.86rem;
@@ -1431,7 +1424,6 @@ body.therapy {
   flex: 1;
 }
 
-.t-start span,
 .t-org-links a {
   margin-top: 1rem;
   font-family: var(--font-sans);
@@ -1697,7 +1689,6 @@ body.therapy {
 }
 
 @media (max-width: 860px) {
-  .t-start,
   .t-orgs,
   .t-videos { grid-template-columns: 1fr; }
   .t-study { padding: 1.3rem 1.25rem; }
