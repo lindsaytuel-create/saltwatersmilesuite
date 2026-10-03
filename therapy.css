@@ -40,9 +40,9 @@ body.therapy {
 .t-subnav {
   background: var(--t-paper);
   border-bottom: 1px solid var(--t-line);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  /* Sits below the sticky global nav so its dropdowns open on top */
+  position: relative;
+  z-index: 99;
 }
 
 .t-subnav-inner {
