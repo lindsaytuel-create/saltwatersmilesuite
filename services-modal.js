@@ -22,9 +22,10 @@ const SERVICES = {
     images: [
       'images/specialty-tooth-gems.jpg',
       'images/kadencegem.jpg',
+      { src: 'images/specialty-gem-moon.jpg', position: '20% center' },
+      { src: 'images/specialty-gems-pink-crystals.jpg', fit: 'contain' },
       'images/Butterfly2.jpeg',
       'images/gemparty2.jpg',
-      'images/redwhitebluegems.jpg',
       'images/celestialgems.jpg',
     ],
     description: `<p>Stand out with one-of-a-kind specialty gems including hearts, stars, flowers, and more. These premium gems are applied with the same safe, non-invasive technique and are designed to make your smile truly unforgettable.</p>
