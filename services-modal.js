@@ -57,7 +57,6 @@ const SERVICES = {
       'images/signature-whitening.jpg',
       'images/signature-whitening-2.jpg',
       { src: 'images/beforeafter.jpg', fit: 'contain' },
-      { src: 'images/beforeafter-signature.jpg', fit: 'contain' },
     ],
     imagePosition: 'center 30%',
     description: `<p>Our maximum whitening experience is designed for clients seeking the brightest result possible in a single visit. Your appointment begins with a nourishing lip oil application and personalized shade consultation, followed by placement of a protective gum barrier to help prevent sensitivity. This service includes 3–4 whitening rounds lasting approximately 15 minutes each for a more elevated whitening treatment.</p>
