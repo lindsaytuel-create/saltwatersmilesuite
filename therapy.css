@@ -630,9 +630,10 @@ body.therapy {
 .t-form-foot {
   margin-top: 1.6rem;
   font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 300;
-  color: var(--t-slate);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--t-deep);
   text-align: center;
 }
 
@@ -2211,6 +2212,7 @@ body.therapy {
   .t-form-actions { display: none !important; }
   .t-printonly { display: grid !important; }
   .t-form-sign { grid-template-columns: 2fr 1fr !important; gap: 1.5rem; padding-top: 0.6rem; }
-  .t-form-foot { margin-top: 0.8rem; }
+  /* our contact line: large and dark enough to read on any printer */
+  .t-form-foot { margin-top: 1rem; font-size: 13pt; font-weight: 500; color: #1f2b36 !important; }
 }
 
