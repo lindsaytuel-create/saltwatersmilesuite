@@ -197,9 +197,9 @@
 
 .hero-btn {
   width: 15.5rem;
-  padding: 0.85rem 2rem;
+  padding: 0.85rem 1.25rem;
   /* center the label both ways, so one-line labels sit level with
-     "Book an Appointment" when it wraps to two lines */
+     "Book Whitening & Gems" when it wraps to two lines */
   display: inline-flex;
   align-items: center;
   justify-content: center;

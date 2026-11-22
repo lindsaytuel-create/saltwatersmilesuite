@@ -41,6 +41,7 @@
             <li><a href="therapy.html">Overview</a></li>
             <li><a href="therapy-process.html">How It Works</a></li>
             <li><a href="therapy-resources.html">Research</a></li>
+            <li><a href="therapy-consult.html">Request a Consultation</a></li>
             <li><a href="therapy-referrals.html#form">Refer a Patient</a></li>
           </ul>
         </li>
@@ -67,6 +68,7 @@
           <li><a href="therapy.html">Overview</a></li>
           <li><a href="therapy-process.html">How It Works</a></li>
           <li><a href="therapy-resources.html">Research</a></li>
+          <li><a href="therapy-consult.html">Request a Consultation</a></li>
           <li><a href="therapy-referrals.html#form" class="active">Refer a Patient</a></li>
         </ul>
       </div>
@@ -164,28 +166,27 @@
             <div class="t-rule"></div>
             <div class="t-notice" data-rf="online" hidden>
               <p>
-                <strong>Sent securely, straight to us.</strong> Referrals from
-                this form go to our HIPAA-compliant account. Once one arrives,
-                we reach out to the patient or family to schedule a
-                consultation. Please don&rsquo;t email patient information to
-                our regular inbox.
+                <strong>Patient privacy.</strong> Referrals submitted through
+                this form are encrypted in transit and delivered to our secure,
+                HIPAA-compliant system. Patient information is used only to
+                coordinate care. Once a referral arrives, we contact the patient
+                or family to schedule a consultation.
               </p>
             </div>
             <div class="t-notice" data-rf="offline">
               <p>
-                <strong>Patient privacy.</strong> This form doesn&rsquo;t send
-                anything over the internet. What you type stays on your computer
-                until you print it or save it as a PDF. Give the completed form
-                to the family to bring to their consultation, or call us at
-                <a href="tel:+15034687006" class="t-inline-link">(503) 468-7006</a>
-                to arrange secure delivery. Please don&rsquo;t email patient
-                information to our regular inbox.
+                <strong>Patient privacy.</strong> Referrals are handled in
+                accordance with HIPAA. Information entered on this form is not
+                transmitted or stored online. Print the completed form or save
+                it as a PDF for the family to bring to their consultation, or
+                call <a href="tel:+15034687006" class="t-inline-link">(503) 468-7006</a>
+                to arrange secure delivery.
               </p>
             </div>
           </div>
 
-          <!-- Sends to our Google Form once referral-form.js is set up with the
-               form address and field IDs. Until then the page is print-only.
+          <!-- Sends to our Google Apps Script web app once ENDPOINT is set in
+               myo-forms.js. Until then the page is print-only.
                onsubmit stays "return false" so a form can never submit to this
                page and put patient details in the address bar. -->
           <form class="t-form" id="referralForm" onsubmit="return false;">
@@ -196,19 +197,19 @@
               <span class="t-form-legend">Patient</span>
               <div class="t-field t-field--wide">
                 <label for="p-name">Name</label>
-                <input type="text" id="p-name" name="patient_name" autocomplete="off" required />
+                <input type="text" id="p-name" name="patient_name" maxlength="100" autocomplete="off" required />
               </div>
               <div class="t-field">
                 <label for="p-dob">Date of birth</label>
-                <input type="text" id="p-dob" name="patient_dob" placeholder="MM / DD / YYYY" autocomplete="off" />
+                <input type="text" id="p-dob" name="patient_dob" maxlength="30" placeholder="MM / DD / YYYY" autocomplete="off" />
               </div>
               <div class="t-field">
                 <label for="p-phone">Patient or family phone</label>
-                <input type="tel" id="p-phone" name="patient_phone" autocomplete="off" required />
+                <input type="tel" id="p-phone" name="patient_phone" maxlength="40" autocomplete="off" required />
               </div>
               <div class="t-field t-field--wide">
                 <label for="p-guardian">Parent or guardian, if a minor</label>
-                <input type="text" id="p-guardian" name="guardian" autocomplete="off" />
+                <input type="text" id="p-guardian" name="guardian" maxlength="100" autocomplete="off" />
               </div>
             </div>
 
@@ -216,19 +217,19 @@
               <span class="t-form-legend">Referring Provider</span>
               <div class="t-field">
                 <label for="r-name">Name and credentials</label>
-                <input type="text" id="r-name" name="provider_name" required />
+                <input type="text" id="r-name" name="provider_name" maxlength="100" required />
               </div>
               <div class="t-field">
                 <label for="r-practice">Practice</label>
-                <input type="text" id="r-practice" name="practice" />
+                <input type="text" id="r-practice" name="practice" maxlength="120" />
               </div>
               <div class="t-field">
                 <label for="r-phone">Phone</label>
-                <input type="tel" id="r-phone" name="provider_phone" />
+                <input type="tel" id="r-phone" name="provider_phone" maxlength="40" />
               </div>
               <div class="t-field">
                 <label for="r-email">Preferred contact for updates</label>
-                <input type="text" id="r-email" name="provider_contact" placeholder="Email or phone" required />
+                <input type="text" id="r-email" name="provider_contact" maxlength="120" placeholder="Email or phone" required />
               </div>
             </div>
 
@@ -265,7 +266,7 @@
               <span class="t-form-legend">Clinical Notes</span>
               <div class="t-field t-field--wide">
                 <label for="notes" class="t-sr-only">Clinical notes</label>
-                <textarea id="notes" name="notes" rows="4"></textarea>
+                <textarea id="notes" name="notes" maxlength="4000" rows="4"></textarea>
               </div>
             </div>
 
@@ -343,6 +344,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="referral-form.js"></script>
+    <script src="myo-forms.js"></script>
   </body>
 </html>
