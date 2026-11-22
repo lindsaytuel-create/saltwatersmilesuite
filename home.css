@@ -301,21 +301,6 @@
 
 .link-underline:hover { opacity: 0.7; }
 
-.intro-social {
-  display: flex;
-  justify-content: center;
-  gap: 1.4rem;
-  margin-top: 2.25rem;
-}
-
-.intro-social a {
-  display: flex;
-  color: var(--olive);
-  transition: opacity 0.2s;
-}
-
-.intro-social a:hover { opacity: 0.7; }
-
 /* ── Featured Services ─────────────────── */
 .featured {
   background: var(--bg);
