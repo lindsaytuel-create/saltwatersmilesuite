@@ -83,6 +83,39 @@ nav {
 
 .nav-icons a:hover { color: var(--border); }
 
+/* ── Patient Portal button ─────────────────
+   Small pill beside the social icons on every page, so
+   returning therapy patients can jump straight to their
+   MyoMessenger sign-in. (New patients find the "Getting
+   started" page in the Myofunctional Therapy menu.)
+   "nav .nav-portal" outranks the ".nav-icons a" rules above. */
+nav .nav-portal {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.34rem 0.9rem;
+  border: 1px solid var(--cream);
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cream);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav .nav-portal:hover { background: var(--cream); color: var(--olive); }
+
+/* with the portal button the nav no longer fits one line on
+   tablets and small laptops: the button and icons move to a
+   centered second row instead of squeezing the links */
+@media (max-width: 1100px) {
+  nav:has(.nav-portal) { flex-wrap: wrap; row-gap: 0.75rem; }
+  nav:has(.nav-portal) .nav-links { flex-basis: 100%; justify-content: center; }
+}
+
 /* ── Nav dropdown ──────────────────────── */
 .nav-has-dropdown {
   position: relative;
@@ -141,6 +174,7 @@ nav {
   .nav-links { gap: 0.5rem; }
   .nav-links a { font-size: 0.65rem; letter-spacing: 0.08em; }
   .nav-icons { margin-left: 0; }
+  nav .nav-portal { font-size: 0.58rem; padding: 0.32rem 0.8rem; letter-spacing: 0.1em; }
   /* Keep the longer therapy label inside the viewport */
   .nav-sub li a { font-size: 0.6rem; letter-spacing: 0.06em; padding: 0.55rem 0.9rem; }
 }
@@ -305,38 +339,3 @@ footer {
   .reviews-grid { grid-template-columns: 1fr; }
 }
 
-/* ── Patient Portal button ──────────────────
-   Hidden by default and revealed only on pages
-   carrying the `therapy` body class, so the
-   cosmetic side never shows it. Any new therapy
-   page picks it up automatically. ────────────── */
-.nav-portal { display: none; }
-
-body.therapy .nav-portal {
-  display: inline-block;
-  padding: 0.42rem 1.05rem;
-  border: 1px solid var(--olive);
-  border-radius: 999px;
-  font-family: var(--font-sans);
-  font-size: 0.64rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--olive);
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background 0.2s, color 0.2s;
-}
-
-body.therapy .nav-portal:hover {
-  background: var(--olive);
-  color: #fff;
-}
-
-@media (max-width: 480px) {
-  body.therapy .nav-portal {
-    font-size: 0.6rem;
-    padding: 0.38rem 0.85rem;
-    letter-spacing: 0.1em;
-  }
-}
