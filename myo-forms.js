@@ -21,7 +21,7 @@
       button: 'Send Referral',
       done: 'Referral sent. Thank you.',
       next: 'We will reach out to the patient or family to schedule a consultation, ' +
-            'and let your office know once we have connected. You can still print a copy for the family.'
+            'and let your office know once we have connected. You can still print a copy for the patient.'
     },
     consultForm: {
       form: 'consult',
