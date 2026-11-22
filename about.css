@@ -222,9 +222,60 @@ body {
   max-width: 340px;
 }
 
+/* photo of the two owners, above their bio cards */
+.team-photo {
+  max-width: 480px;
+  margin: 0 auto 3.5rem;
+}
+
+.team-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid rgba(196, 170, 122, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* shared note under the two bio cards */
+.team-note {
+  max-width: 640px;
+  margin: 2.75rem auto 0;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.85;
+  color: var(--text-muted);
+}
+
+/* two photos of care in the suite, side by side */
+.suite-photos { margin-top: 4.5rem; }
+
+.suite-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.suite-grid figure { margin: 0; }
+
+.suite-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
 @media (max-width: 640px) {
   .about-team { padding: 3.5rem 1.25rem; }
   .team-grid { grid-template-columns: 1fr; gap: 3rem; display: flex; flex-direction: column; }
   .bio-photo-wrap { width: 240px; height: 240px; }
   .bio-card--courtney { order: -1; }
+  .team-photo { margin-bottom: 2.5rem; }
+  .suite-photos { margin-top: 3.5rem; }
+  .suite-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
 }

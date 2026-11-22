@@ -1,2 +1,5 @@
 .DS_Store
 images/.DS_Store
+
+# setup notes and scripts that belong in Google, not on the public site
+setup/

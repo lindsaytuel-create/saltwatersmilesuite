@@ -637,8 +637,10 @@ body.therapy {
 }
 
 /* ── Print ──────────────────────────────── */
+/* The referral page prints only the form (blank or filled in), so an
+   office can print a pad for the front desk or save a completed one as a PDF. */
+.t-printonly { display: none; }
 
-}
 
 /* ── Responsive ─────────────────────────── */
 @media (max-width: 860px) {
@@ -1694,3 +1696,521 @@ body.therapy {
   .t-study { padding: 1.3rem 1.25rem; }
   .t-case { grid-template-columns: 1fr; gap: 1.25rem; padding: 1.3rem 1.25rem; }
 }
+
+/* ══════════════════════════════════════════
+   ORTHODONTICS
+══════════════════════════════════════════ */
+
+/* text beside a photo */
+.t-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.t-split-photo { margin: 0; }
+
+.t-split-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 18px 40px rgba(38, 55, 70, 0.16);
+}
+
+/* before, during, and after braces */
+.t-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 2.75rem;
+}
+
+/* the line that joins the three illustrations */
+.t-timeline::before {
+  content: '';
+  position: absolute;
+  top: 80px;
+  left: 17%;
+  right: 17%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--t-teal), var(--t-sage-dk), var(--t-indigo));
+  opacity: 0.45;
+}
+
+.t-stage { position: relative; text-align: center; }
+.t-stage--before { --t-accent: var(--t-teal); }
+.t-stage--during { --t-accent: var(--t-sage-dk); }
+.t-stage--after  { --t-accent: var(--t-indigo); }
+
+.t-stage-art {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 1.4rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--t-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--t-accent);
+  box-shadow: 0 10px 26px rgba(38, 55, 70, 0.10);
+}
+
+.t-stage-art svg { width: 118px; height: auto; display: block; }
+
+.t-stage-label {
+  font-family: var(--font-sans);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--t-accent);
+  margin-bottom: 0.4rem;
+}
+
+.t-stage h3 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 400;
+  color: var(--t-deep);
+  margin-bottom: 0.9rem;
+}
+
+.t-stage ul {
+  list-style: none;
+  text-align: left;
+  background: var(--t-paper);
+  border: 1px solid var(--t-line);
+  border-top: 3px solid var(--t-accent);
+  border-radius: 5px;
+  padding: 1.2rem 1.3rem;
+}
+
+.t-stage li {
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--t-slate);
+  padding-left: 1.1rem;
+  position: relative;
+  margin-bottom: 0.55rem;
+}
+
+.t-stage li:last-child { margin-bottom: 0; }
+
+.t-stage li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--t-accent);
+}
+
+/* numbered list for how we work with the orthodontist */
+.t-numbered {
+  list-style: none;
+  counter-reset: num;
+  margin-top: 1.5rem;
+}
+
+.t-numbered li {
+  counter-increment: num;
+  position: relative;
+  padding-left: 2.6rem;
+  margin-bottom: 1.1rem;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--t-slate);
+}
+
+.t-numbered li::before {
+  content: counter(num);
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--t-deep);
+  color: #fff;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+/* question-style accordions */
+.t-acc--faq { --t-accent: var(--t-gold); }
+
+.t-acc--faq summary {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.t-acc-answer { padding: 0.1rem 1.1rem 1.35rem; }
+
+.t-acc-answer p {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--t-slate);
+}
+
+.t-callout-actions {
+  display: flex;
+  gap: 0.9rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.t-callout-actions .t-btn--ghost {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.6);
+  background: transparent;
+}
+
+.t-callout-actions .t-btn--ghost:hover { background: #fff; color: var(--t-deep); }
+
+@media (max-width: 860px) {
+  .t-split { grid-template-columns: 1fr; gap: 2rem; }
+  .t-split-photo { max-width: 420px; margin: 0 auto; width: 100%; }
+  .t-timeline { grid-template-columns: 1fr; gap: 2.5rem; }
+  .t-timeline::before { display: none; }
+}
+
+/* ══════════════════════════════════════════
+   OVERVIEW: quick facts and the two doors
+══════════════════════════════════════════ */
+.t-facts--compact { margin-top: 2rem; }
+.t-facts--compact .t-fact { padding: 1.25rem 1rem; }
+.t-facts--compact .t-fact-label { margin-bottom: 0; }
+
+.t-signs-note {
+  margin-top: 1.75rem;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--t-slate);
+}
+
+.t-paths {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+}
+
+.t-path {
+  display: flex;
+  flex-direction: column;
+  background: var(--t-paper);
+  border: 1px solid var(--t-line);
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.t-path:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px rgba(38, 55, 70, 0.14);
+}
+
+.t-path img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.t-path-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  padding: 1.5rem 1.6rem 1.7rem;
+}
+
+.t-path-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--t-clay);
+}
+
+.t-path h3 {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 400;
+  color: var(--t-deep);
+}
+
+.t-path p {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--t-slate);
+}
+
+.t-path-link {
+  margin-top: auto;
+  padding-top: 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--t-deep);
+}
+
+.t-path:hover .t-path-link { color: var(--t-sage-dk); }
+
+@media (max-width: 860px) {
+  .t-paths { grid-template-columns: 1fr; }
+}
+
+/* five condition cards, centered so the last row stays balanced */
+.t-conditions--center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.t-conditions--center .t-condition { flex: 0 1 calc((100% - 3rem) / 3); }
+
+/* the orthodontics section's eyebrow sits on a light background */
+.t-split .t-eyebrow { margin-bottom: 0.5rem; }
+
+@media (max-width: 900px) {
+  .t-conditions--center .t-condition { flex-basis: calc((100% - 1.5rem) / 2); }
+}
+
+@media (max-width: 700px) {
+  .t-conditions--center .t-condition { flex-basis: 100%; }
+}
+
+/* ══════════════════════════════════════════
+   PRIVACY PAGES
+══════════════════════════════════════════ */
+.t-legal { max-width: 760px; margin: 0 auto; }
+
+.t-legal-banner {
+  background: var(--t-paper);
+  border: 1px solid var(--t-line);
+  border-left: 3px solid var(--t-deep);
+  border-radius: 4px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 2.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+  color: var(--t-deep);
+}
+
+.t-legal h2 {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 400;
+  color: var(--t-deep);
+  margin: 2.5rem 0 0.8rem;
+}
+
+.t-legal h3 {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--t-clay);
+  margin: 1.6rem 0 0.45rem;
+}
+
+.t-legal p,
+.t-legal li {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--t-slate);
+}
+
+.t-legal p { margin-bottom: 1rem; }
+.t-legal ul { margin: 0 0 1rem 1.2rem; }
+.t-legal li { margin-bottom: 0.4rem; }
+.t-legal strong { color: var(--t-text); font-weight: 500; }
+
+.t-legal a {
+  color: var(--t-deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.t-legal-contact {
+  margin-top: 1rem;
+  padding: 1.2rem 1.5rem;
+  background: var(--t-paper);
+  border: 1px solid var(--t-line);
+  border-radius: 4px;
+}
+
+.t-legal-contact p { margin-bottom: 0.2rem; }
+
+/* referral form: send mode and print-only mode (see referral-form.js) */
+[data-rf][hidden],
+.rf-status[hidden] { display: none !important; }
+
+.rf-status { margin: 1rem 0 0; }
+
+.rf-status--error {
+  background: #f8eeec;
+  border-color: #e3c4bd;
+  border-left-color: #a5503f;
+}
+
+.rf-status a { color: var(--t-deep); text-decoration: underline; }
+
+/* referral form: photo and file upload */
+.rf-optional {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: var(--t-slate);
+}
+
+.rf-drop {
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 1.6rem 1.25rem;
+  border: 1.5px dashed var(--t-line);
+  border-radius: 6px;
+  background: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.rf-drop:hover,
+.rf-drop:focus-within {
+  border-color: var(--t-teal);
+  background: #f7fbfb;
+}
+
+/* the real file picker covers the whole box, so clicking or dropping anywhere works */
+.rf-drop input[type="file"] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.rf-drop-title {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--t-deep);
+}
+
+.rf-drop-hint {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: var(--t-slate);
+}
+
+.rf-files {
+  list-style: none;
+  margin-top: 0.75rem;
+}
+
+.rf-files li {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--t-text);
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--t-line);
+}
+
+/* spam trap: kept off screen for people, still visible to bots */
+.rf-trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ══════════════════════════════════════════
+   PRINT: referral form only, on one page
+   (kept last so it overrides the screen rules above)
+══════════════════════════════════════════ */
+@media print {
+  @page { size: letter; margin: 0.5in; }
+  body.therapy { background: #fff; }
+  nav, .t-subnav, footer, .t-noprint { display: none !important; }
+  .t-section { padding: 0 !important; background: #fff !important; }
+  .t-form {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #fff !important;
+  }
+  .t-form-title { margin-bottom: 0.9rem; padding-bottom: 0.5rem; font-size: 1.2rem; }
+  .t-form-group {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.45rem 1.5rem !important;
+    margin-bottom: 0.9rem !important;
+    break-inside: avoid;
+  }
+  .t-field label { margin-bottom: 0.1rem; font-size: 0.7rem; }
+  .t-field input,
+  .t-field textarea {
+    border: none !important;
+    border-bottom: 1px solid #888 !important;
+    border-radius: 0 !important;
+    padding: 0.15rem 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    resize: none;
+  }
+  .t-field textarea { height: 1.4in; }
+  .t-checks { columns: 2 !important; }
+  .t-checks li { margin-bottom: 0.2rem; font-size: 0.8rem; }
+  .t-form-actions { display: none !important; }
+  .t-printonly { display: grid !important; }
+  .t-form-sign { grid-template-columns: 2fr 1fr !important; gap: 1.5rem; padding-top: 0.6rem; }
+  .t-form-foot { margin-top: 0.8rem; }
+}
+

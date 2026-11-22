@@ -205,6 +205,23 @@ footer {
   text-align: left;
 }
 
+.footer-legal {
+  font-family: var(--font-sans);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  color: #8f877a;
+}
+
+.footer-legal a {
+  color: #a09888;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  color: #c8bfae;
+  text-decoration: underline;
+}
+
 /* ── Reviews Section ────────────────────── */
 .reviews-section {
   background: #f5f0e8;
